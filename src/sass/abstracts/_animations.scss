@@ -20,6 +20,18 @@
   }
 }
 
+@keyframes move-from-top {
+  0% {
+    opacity: 0;
+    transform: translateY(-300px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(-40px)
+  }
+}
+
 @keyframes fade-in-delay {
   0% {
     opacity: 0;
@@ -67,6 +79,10 @@
 
 .main-header {
   animation: expand-and-move-up 4.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+
+  @include respond(tab-port) {
+    animation: move-from-top 2.7s cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
 }
 
 .sub-header {
