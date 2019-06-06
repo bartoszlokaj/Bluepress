@@ -1,0 +1,27 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: $color-white;
+}
+
+.navbar {
+  font-size: 2rem;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.navbar__logo {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 7px;
+  font-size: 3.2rem;
+  background: -webkit-linear-gradient(
+    right,
+    $color-secondary-green,
+    $color-primary-blue
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

@@ -1,0 +1,81 @@
+.navbar {
+  background-color: rgba($color-dark-gray-1, 0.8);
+  width: 100%;
+  height: 5.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 8px 10px 2px rgba($color-black, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  .navbar__nav {
+    .navbar__list {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      margin-left: 20px;
+      list-style-type: none;
+
+      .navbar__list-item {
+        margin: 1rem;
+        padding: 5px;
+        border-bottom: 1px solid transparent;
+        transition: all 0.2s ease-in;
+
+        &:hover {
+          border-color: $color-primary-blue;
+        }
+      }
+    }
+
+    @include respond(tab-port) {
+      display: none;
+    }
+  }
+
+  &__logo {
+    
+      @include absoluteCenter;
+    
+    @include respond(tab-port) {
+      // flex: 1 0 auto;
+      margin-right: 12rem;
+    }
+  }
+
+  .contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .contact__phone {
+      margin-right: 4rem;
+      cursor: pointer;
+
+      .phone__icon {
+        height: 2.5rem;
+        width: 2.5rem;
+        margin-right: 0.5rem;
+        fill: $color-light-gray-1;
+      }
+    }
+
+    .contact__mail {
+      margin-right: 4rem;
+      cursor: pointer;
+      .mail__icon {
+        height: 2.5rem;
+        width: 2.5rem;
+        margin-right: 0.5rem;
+
+        fill: $color-light-gray-1;
+      }
+    }
+
+    @include respond(small-screen) {
+      display: none;
+    }
+  }
+}

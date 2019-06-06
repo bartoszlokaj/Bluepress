@@ -1,0 +1,25 @@
+.hamburger-wrapper {
+  margin: 0 4rem 0 4rem;
+  display: none;
+
+  @include respond(tab-port) {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .hamburger {
+    width: 5.5rem;
+    height: 3.8rem;
+    margin: 1rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+
+    &__line {
+      width: 90%;
+      height: 2px;
+      background-color: $color-light-gray-1;
+    }
+  }
+}

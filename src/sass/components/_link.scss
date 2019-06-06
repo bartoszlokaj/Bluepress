@@ -1,0 +1,21 @@
+.link,
+.link:focus {
+  color: $color-light-gray-1;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-primary-blue;
+  }
+}
+
+.link:active {
+  color: $color-primary-blue;
+}
+
+.link__navbar {
+  flex: 1 0 auto;
+}
+
+.active {
+  color: $color-primary-blue;
+}
