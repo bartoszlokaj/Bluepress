@@ -1,0 +1,82 @@
+@keyframes expand-and-move-up {
+  0% {
+    letter-spacing: -1em;
+    opacity: 0;
+  }
+
+  5% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: .6;
+    letter-spacing: 7px;
+    transform: translateY(0)
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-40px)
+
+  }
+}
+
+@keyframes fade-in-delay {
+  0% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes swipe-down {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+    transform: translateY(0)
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateY(12.5rem)
+  }
+
+  80% {
+    opacity: 1;
+    transform: translateY(12.5rem)
+  }
+
+  95% {
+    opacity: 0;
+    transform: translateY(12.5rem)
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(12.5rem)
+  }
+}
+
+.main-header {
+  animation: expand-and-move-up 4.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+.sub-header {
+  animation: fade-in-delay 4.7s cubic-bezier(0.215, 0.610, 0.355, 1.000);
+}
+
+.swipe {
+  animation: fade-in-delay 4.7s cubic-bezier(0.215, 0.610, 0.355, 1.000);
+}
+
+.swipe__circle {
+  animation: swipe-down 3s ease-out infinite;
+}

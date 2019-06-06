@@ -1,5 +1,5 @@
 .navbar {
-  background-color: rgba($color-dark-gray-1, 0.8);
+  background-color: rgba($color-dark-gray-1, 0.88);
   width: 100%;
   height: 5.7rem;
   display: flex;
@@ -7,6 +7,7 @@
   justify-content: space-between;
   box-shadow: 0 8px 10px 2px rgba($color-black, 0.4);
   position: fixed;
+  z-index: 100;
   top: 0;
   left: 0;
 
@@ -36,12 +37,22 @@
   }
 
   &__logo {
-    
-      @include absoluteCenter;
-    
+    @include absoluteCenter;
+
     @include respond(tab-port) {
-      // flex: 1 0 auto;
-      margin-right: 12rem;
+      margin-right: 10rem;
+      position: unset;
+      transform: unset;
+    }
+
+    @include respond(small-screen) {
+      @include absoluteCenter;
+    }
+
+    @include respond(phone) {
+      margin-right: 5rem;
+      position: unset;
+      transform: unset;
     }
   }
 
@@ -51,6 +62,7 @@
     align-items: center;
 
     .contact__phone {
+      display: flex;
       margin-right: 4rem;
       cursor: pointer;
 
@@ -63,12 +75,13 @@
     }
 
     .contact__mail {
+      display: flex;
       margin-right: 4rem;
       cursor: pointer;
       .mail__icon {
         height: 2.5rem;
         width: 2.5rem;
-        margin-right: 0.5rem;
+        margin-right: 1rem;
 
         fill: $color-light-gray-1;
       }

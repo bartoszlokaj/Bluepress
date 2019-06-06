@@ -1,3 +1,22 @@
+.hero__wrapper {
+  background-image: linear-gradient(
+    to right,
+    rgba($color-primary-blue, 1),
+    rgba($color-dark-gray-1, 1)
+  );
+  background-color: $color-dark-gray-1;
+  height: 101vh;
+  width: 100%;
+  -webkit-clip-path: ellipse(100% 65% at 50% 35%);
+  clip-path: ellipse(100% 64% at 50% 35%);
+
+  @include respond(small-screen) {
+    clip-path: none;
+    height: 100vh;
+    background: transparent;
+  }
+}
+
 .hero {
   background-image: linear-gradient(
       to right bottom,
@@ -9,4 +28,14 @@
   background-position: center;
   background-size: cover;
   min-height: 100vh;
+  -webkit-clip-path: ellipse(100% 65% at 50% 35%);
+  clip-path: ellipse(100% 64% at 50% 35%);
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+
+  @include respond(small-screen) {
+    clip-path: none;
+  }
 }

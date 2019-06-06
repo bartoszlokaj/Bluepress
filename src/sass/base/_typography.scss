@@ -25,3 +25,16 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.header {
+  font-size: 4rem;
+  letter-spacing: 1.2rem;
+  text-transform: uppercase;
+  text-shadow: 0 2px 5px rgba($color-dark-gray-1, .8)
+}
+
+.main-header {
+  font-size: 6rem;
+  margin-top: 20rem;
+  text-align: center;
+}

@@ -1,0 +1,20 @@
+.swipe {
+  width: 8rem;
+  height: 20rem;
+  margin-bottom: 2rem;
+  background: transparent;
+  border: 2px solid $color-light-gray-2;
+  border-radius: 40px;
+  opacity: .9;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+
+  &__circle {
+    width: 6rem;
+    height: 6rem;
+    background-image: radial-gradient($color-white, $color-light-gray-2);
+    border-radius: 100%;
+    margin-top: 0.6rem;
+  }
+}
