@@ -77,6 +77,10 @@
   animation: fade-in-delay 4.7s cubic-bezier(0.215, 0.610, 0.355, 1.000);
 }
 
+.swipe__wrapper {
+  animation: fade-in-delay 4.7s cubic-bezier(0.215, 0.610, 0.355, 1.000);
+}
+
 .swipe__circle {
   animation: swipe-down 3s ease-out infinite;
 }
