@@ -28,7 +28,7 @@
 
   100% {
     opacity: 1;
-    transform: translateY(-40px)
+    transform: translateY(0)
   }
 }
 
@@ -78,15 +78,15 @@
 }
 
 .main-header {
-  animation: expand-and-move-up 4.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+  animation: expand-and-move-up 1.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 
   @include respond(tab-port) {
-    animation: move-from-top 2.7s cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation: move-from-top 1.7s cubic-bezier(0.215, 0.610, 0.355, 1.000);
   }
 }
 
 .sub-header {
-  animation: fade-in-delay 4.7s cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  animation: fade-in-delay 2.3s cubic-bezier(0.215, 0.610, 0.355, 1.000);
 }
 
 .swipe {

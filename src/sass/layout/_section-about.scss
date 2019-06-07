@@ -1,0 +1,43 @@
+.section-about {
+  width: 100%;
+  min-height: 100vh;
+
+  .about {
+    display: flex;
+    justify-content: center;
+    &__text {
+      width: 40%;
+      padding: 2rem;
+      
+    }
+
+    .tiles {
+      width: 40%;
+      padding: 2rem;
+      background-image: url(/img/cyclone.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+
+      &__row {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .tile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 10rem;
+        height: 10rem;
+        border-radius: 100%;
+        color: $color-light-gray-1;
+        background-color: rgba($color-dark-gray-2, .8);
+      }
+    }
+  }
+}
