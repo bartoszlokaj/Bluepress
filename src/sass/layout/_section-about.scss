@@ -1,73 +1,29 @@
+
 .section-about {
   width: 100%;
-  min-height: 100vh;
+  min-height: 111vh;
+  margin-top: -10rem;
+  background-image: linear-gradient(
+    to right top,
+    rgba($color-primary-blue, 1),
+    rgba($color-dark-gray-1, 1)
+  );
+  -webkit-clip-path: ellipse(100% 65% at 50% 35%);
+  clip-path: ellipse(100% 64% at 50% 35%);
+  
 
   .about {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    padding-top: 7rem;
     &__text {
-      width: 40%;
+      width: 44%;
       padding: 2rem;
       padding-right: 3rem;
       display: flex;
       flex-flow: column;
       justify-content: center;
-    }
-
-    .tiles {
-      min-width: 40%;
-      padding: 2rem;
-      background-image: url(/img/cyclone.png);
-      background-repeat: no-repeat;
-      background-position: center;
-      display: flex;
-      flex-flow: column;
-      align-items: center;
-      justify-content: center;
-
-      &__row {
-        width: 100%;
-        margin-top: 2.4rem;
-        display: flex;
-        justify-content: space-around;
-
-        &--3 {
-          justify-content: space-between;
-        }
-      }
-
-      .tile {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 14rem;
-        height: 14rem;
-        border-radius: 100%;
-        color: $color-light-gray-1;
-        background-image: radial-gradient(
-          rgba($color-dark-gray-2, 0.9),
-          rgba($color-dark-gray-1, 0.9)
-        );
-        box-shadow: 0 0 8px rgba($color-black, 0.7);
-
-        &--webpack {
-          height: 20rem;
-          width: 20rem;
-        }
-
-        &__img {
-          height: 10rem;
-          &--webpack {
-            height: 15rem;
-          }
-          &--photoshop {
-            height: 9rem;
-          }
-          &--js {
-            height: 9rem;
-          }
-        }
-      }
     }
   }
 }
