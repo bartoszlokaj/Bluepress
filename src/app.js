@@ -7,6 +7,7 @@ import imgJs from "./img/js-icon.png";
 import imgPhotoshop from "./img/photoshop-icon.png";
 import imgSass from "./img/sass-icon.png";
 import img3 from "./img/cyclone.png";
+import imgTriangles from "./img/triangles.png";
 const scss = require('./sass/main.scss');
 
 console.log('Hello from app.js');
