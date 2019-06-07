@@ -34,29 +34,49 @@
       rgba($color-dark-gray-1, 0.9)
     );
     box-shadow: 0 0 8px rgba($color-black, 0.7);
-    transition: all .6s ease;
+    transition: all 0.6s ease;
 
     &:hover {
       transform: scale(1.1);
       box-shadow: 0 0 18px rgba($color-black, 0.8);
     }
 
+    @include respond(phablet) {
+      width: 10rem;
+      height: 10rem;
+    }
 
     &--webpack {
       height: 20rem;
       width: 20rem;
+      @include respond(phablet) {
+        width: 15rem;
+        height: 15rem;
+      }
     }
 
     &__img {
       height: 10rem;
+      @include respond(phablet) {
+        height: 7.6rem;
+      }
       &--webpack {
         height: 15rem;
+        @include respond(phablet) {
+          height: 12rem;
+        }
       }
       &--photoshop {
         height: 9rem;
+        @include respond(phablet) {
+          height: 7rem;
+        }
       }
       &--js {
         height: 9rem;
+        @include respond(phablet) {
+          height: 6rem;
+        }
       }
     }
   }

@@ -31,16 +31,19 @@ body {
   letter-spacing: 1.2rem;
   text-transform: uppercase;
   text-align: center;
-  text-shadow: 0 2px 5px rgba($color-dark-gray-1, .8);
+  text-shadow: 0 2px 5px rgba($color-dark-gray-1, 0.8);
 
   @include respond(phablet) {
-    letter-spacing: .5rem;
+    letter-spacing: 0.5rem;
   }
 
   &--about {
     text-transform: capitalize;
     text-align: left;
     letter-spacing: 2px;
+    @include respond(small-screen) {
+      text-align: center;
+    }
   }
 }
 
@@ -73,6 +76,9 @@ body {
 .section-about {
   font-size: 2rem;
   color: $color-dark-gray-2;
+  @include respond(small-screen) {
+    text-align: center;
+  }
 }
 
 .paragraph {

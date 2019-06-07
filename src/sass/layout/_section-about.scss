@@ -4,11 +4,20 @@
   margin-top: -10rem;
   background-image: radial-gradient($color-light-gray-1, $color-light-gray-2);
 
+  @include respond(small-screen) {
+    margin-top: 0;
+    min-height: 115vh;
+  }
+
   .about {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 7rem;
+
+    @include respond(small-screen) {
+      padding-top: 5rem;
+    }
     &__text {
       width: 44%;
       padding: 2rem;
@@ -16,6 +25,18 @@
       display: flex;
       flex-flow: column;
       justify-content: center;
+
+      @include respond(small-screen) {
+        width: 100%;
+      }
+    }
+    .tiles {
+      @include respond(laptop) {
+        width: 50%;
+      }
+      @include respond(small-screen) {
+        width: 100%;
+      }
     }
   }
 }
