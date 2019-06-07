@@ -8,11 +8,14 @@
     &__text {
       width: 40%;
       padding: 2rem;
-      
+      padding-right: 3rem;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
     }
 
     .tiles {
-      width: 40%;
+      min-width: 40%;
       padding: 2rem;
       background-image: url(/img/cyclone.png);
       background-repeat: no-repeat;
@@ -24,19 +27,46 @@
 
       &__row {
         width: 100%;
+        margin-top: 2.4rem;
         display: flex;
         justify-content: space-around;
+
+        &--3 {
+          justify-content: space-between;
+        }
       }
 
       .tile {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 10rem;
-        height: 10rem;
+        width: 14rem;
+        height: 14rem;
         border-radius: 100%;
         color: $color-light-gray-1;
-        background-color: rgba($color-dark-gray-2, .8);
+        background-image: radial-gradient(
+          rgba($color-dark-gray-2, 0.9),
+          rgba($color-dark-gray-1, 0.9)
+        );
+        box-shadow: 0 0 8px rgba($color-black, 0.7);
+
+        &--webpack {
+          height: 20rem;
+          width: 20rem;
+        }
+
+        &__img {
+          height: 10rem;
+          &--webpack {
+            height: 15rem;
+          }
+          &--photoshop {
+            height: 9rem;
+          }
+          &--js {
+            height: 9rem;
+          }
+        }
       }
     }
   }
