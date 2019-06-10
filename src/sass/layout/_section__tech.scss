@@ -1,32 +1,39 @@
 .section__tech {
-  .tech__wrapper {
-    display: flex;
-    align-items: center;
-    margin-top: -12rem;
-    width: 100%;
-    height: 102vh;
-    background-image: linear-gradient(
-      to right,
-      rgba($color-dark-gray-1, 1),
-      rgba($color-primary-blue, 1)
-    );
-    clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
-
-    @include respond(small-screen) {
-      clip-path: none;
-      margin-top: 0;
-    }
-  }
-
   .tech {
     width: 100%;
-    height: 100vh;
-
-    background-image: radial-gradient($color-light-gray-1, $color-light-gray-2);
-    clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+    min-height: 120rem;
+    height: 110vh;
+    margin-top: -10rem;
+    background-image: radial-gradient($color-dark-gray-2, $color-dark-gray-1);
+    display: flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 7rem;
 
     @include respond(small-screen) {
-      clip-path: none;
+      padding-top: 5rem;
+      margin-top: 0;
+    }
+    &__text {
+      width: 44%;
+      padding: 2rem;
+      padding-right: 3rem;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+
+      @include respond(small-screen) {
+        width: 100%;
+      }
+    }
+    .tiles {
+      @include respond(laptop) {
+        width: 50%;
+      }
+      @include respond(small-screen) {
+        width: 100%;
+      }
     }
   }
 }

@@ -37,7 +37,7 @@ body {
     letter-spacing: 0.5rem;
   }
 
-  &--about {
+  &--tech {
     text-transform: capitalize;
     text-align: left;
     letter-spacing: 2px;
@@ -73,7 +73,7 @@ body {
   }
 }
 
-.section-about {
+.section-tech {
   font-size: 2rem;
   @include respond(small-screen) {
     text-align: center;
