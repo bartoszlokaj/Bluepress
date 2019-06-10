@@ -55,6 +55,10 @@ $breakpoint choices:
   @if $breakpoint == big-desktop {
     @media (min-width: 125em) { @content };    //2000px
   }
+
+  @if $breakpoint == landscape {
+    @media (orientation: landscape){ @content }; 
+  }
 }
 
 @mixin absoluteCenter {

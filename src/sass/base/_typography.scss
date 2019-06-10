@@ -75,7 +75,6 @@ body {
 
 .section-about {
   font-size: 2rem;
-  color: $color-dark-gray-2;
   @include respond(small-screen) {
     text-align: center;
   }
