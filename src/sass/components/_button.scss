@@ -22,6 +22,9 @@
     margin: auto;
     width: 40rem;
     background-color: $color-secondary-dark;
+    opacity: .8;
+    color: $color-dark-gray-2;
+    border: 3px solid $color-secondary-dark;
 
     &:hover {
       background-color: $color-secondary-green;

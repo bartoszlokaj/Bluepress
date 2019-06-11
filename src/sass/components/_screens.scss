@@ -3,6 +3,7 @@
   justify-content: center;
   align-items: center;
   padding: 5rem 0;
+  position: relative;
 
   .screen {
     display: flex;
@@ -23,6 +24,7 @@
     .desktop {
       width: 51.2rem;
       height: 28.8rem;
+      box-shadow: 0 2px 12px rgba($color-black, 0.4);
     }
     .desktop-neck {
       width: 6rem;
@@ -36,6 +38,7 @@
       background-color: $color-dark-gray-3;
       margin: auto;
       border-radius: 3px;
+      box-shadow: 0 5px 45px 2px rgba($color-black, 0.4);
     }
   }
 
@@ -43,10 +46,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    bottom: 5rem;
+    left: 28%;
 
     .tablet {
       width: 28.6rem;
       height: 14.8rem;
+      box-shadow: 0 2px 12px 4px rgba($color-black, 0.4);
     }
   }
 
@@ -54,10 +61,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    bottom: 5rem;
+    right: 34%;
 
     .mobile {
       width: 9.6rem;
       height: 17rem;
+      box-shadow: 0 2px 12px 4px rgba($color-black, 0.4);
     }
   }
 }
@@ -91,6 +102,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    box-shadow: 0 1px 3px rgba($color-black, 0.4);
 
     .nav-box {
       width: 2rem;
@@ -122,8 +134,13 @@
     height: 30%;
     margin: 1rem 0;
 
-    &--mobile {
+    &--tablet {
       margin: 0.5rem 0;
+    }
+
+    &--mobile {
+      margin: 0;
+      height: 40%;
     }
 
     &--bottom {
