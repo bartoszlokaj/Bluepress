@@ -1,0 +1,34 @@
+.about {
+  width: 100%;
+  height: 200vh;
+  background-image: linear-gradient(
+    to bottom,
+    $color-light-gray-1,
+    $color-light-gray-2,
+    $color-light-gray-3
+  );
+  margin-top: -10rem;
+  border-bottom: 3px solid $color-primary-blue;
+  display: flex;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  // justify-content: center;
+
+  @include respond(laptop) {
+    margin-top: -12rem;
+  }
+
+  @include respond(small-screen) {
+    margin-top: 0;
+  }
+
+  &__text {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    margin-top: 15rem;
+  }
+}

@@ -2,7 +2,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
-  color: $color-white;
+  color: $color-light-gray-1;
 }
 
 .navbar {
@@ -73,6 +73,11 @@ body {
   }
 }
 
+.section__about {
+  color: $color-dark-gray-2;
+  font-size: 2rem;
+}
+
 .section-tech {
   font-size: 2rem;
   @include respond(small-screen) {
@@ -83,4 +88,8 @@ body {
 .paragraph {
   margin-top: 2rem;
   line-height: 1.8;
+
+  &--top {
+    margin-top: 4rem;
+  }
 }

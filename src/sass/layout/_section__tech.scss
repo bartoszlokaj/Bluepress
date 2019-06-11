@@ -1,15 +1,14 @@
 .section__tech {
   .tech {
     width: 100%;
-    min-height: 120rem;
+    min-height: 100rem;
     height: 110vh;
-    margin-top: -10rem;
     background-image: radial-gradient($color-dark-gray-2, $color-dark-gray-1);
     display: flex;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-top: 7rem;
+    margin-top: -1px;
 
     @include respond(small-screen) {
       padding-top: 5rem;
