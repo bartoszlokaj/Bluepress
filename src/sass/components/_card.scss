@@ -1,0 +1,26 @@
+.card {
+  padding: 2.5rem;
+  background-color: $color-light-gray-1;
+  border-radius: 5px;
+  box-shadow: 0 0 12px rgba($color-dark-gray-1, 0.8);
+}
+
+.values-card {
+  &__list {
+    list-style-type: none;
+    line-height: 2;
+
+    .values-card__item {
+      display: flex;
+      align-items: center;
+      border-bottom: 2px dotted $color-light-gray-3;
+      padding: 1rem;
+
+      .values-card__plus {
+        color: $color-secondary-green;
+        font-size: 3rem;
+        margin-right: 2rem;
+      }
+    }
+  }
+}

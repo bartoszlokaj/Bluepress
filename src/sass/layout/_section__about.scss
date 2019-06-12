@@ -42,4 +42,12 @@
   &__action {
     width: 100%;
   }
+
+  .call-to-action {
+    width: 66%;
+    margin: 4rem auto 4rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }

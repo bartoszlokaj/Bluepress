@@ -4,7 +4,7 @@
   background-color: $color-dark-gray-2;
   cursor: pointer;
   box-shadow: 0 2px 5px rgba($color-dark-gray-2, 0.6);
-  transition: all 0.2s ease;
+  transition: all 0.15s ease-in-out;
 
   &:active {
     transform: translateY(2px);
@@ -12,8 +12,12 @@
   }
 
   &--cta {
-    margin: 4rem auto 4rem auto;
     width: 40rem;
+    height: 7.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem;
     background-color: $color-secondary-dark;
     opacity: .8;
     border: 3px solid $color-secondary-dark;
