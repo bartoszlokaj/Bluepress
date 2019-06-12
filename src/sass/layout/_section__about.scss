@@ -6,13 +6,13 @@
     $color-light-gray-2,
     $color-light-gray-3
   );
+  // background-image: url(/img/chained-pattern.png);
   margin-top: -10rem;
   border-bottom: 3px solid $color-primary-blue;
   display: flex;
   display: flex;
   flex-flow: column;
   align-items: center;
-  // justify-content: center;
 
   @include respond(laptop) {
     margin-top: -12rem;
@@ -26,7 +26,7 @@
     display: flex;
     flex-flow: column;
     justify-content: center;
-    width: 66%;
+    width: 60%;
     margin-top: 15rem;
 
     @include respond(small-screen) {
@@ -44,9 +44,10 @@
   }
 
   .call-to-action {
-    width: 66%;
+    width: 60%;
     margin: 4rem auto 4rem auto;
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
   }
