@@ -48,6 +48,11 @@ body {
   text-align: center;
   text-shadow: 0 2px 5px rgba($color-dark-gray-1, 0.8);
 
+  @include respond(small-screen) {
+    letter-spacing: 6px;
+    font-size: 3rem;
+  }
+
   @include respond(phablet) {
     letter-spacing: 0.5rem;
   }
@@ -63,18 +68,23 @@ body {
 }
 
 .main-header {
-  font-size: 6rem;
-  margin-top: 20rem;
+  font-size: 8rem;
+  margin: 20rem .5rem 0 .5rem;
   text-align: center;
-  letter-spacing: 15px;
+  letter-spacing: 18px;
 
-  @include respond(phablet) {
-    letter-spacing: inherit;
+  @include respond(small-screen) {
+    letter-spacing: 10px;
     font-size: 5rem;
   }
 
-  @include respond(phone) {
+  @include respond(phablet) {
     font-size: 4.5rem;
+  }
+
+  @include respond(phoneL) {
+    letter-spacing: 7px;
+    font-size: 4rem;
   }
 }
 

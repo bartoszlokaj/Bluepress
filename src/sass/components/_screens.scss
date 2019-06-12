@@ -5,6 +5,18 @@
   padding: 5rem 0;
   position: relative;
 
+  @include respond(phablet) {
+    transform: scale(0.9);
+  }
+
+  @include respond(phoneL) {
+    transform: scale(0.76);
+  }
+
+  @include respond(phone) {
+    transform: scale(0.7);
+  }
+
   .screen {
     display: flex;
     justify-content: center;
@@ -55,6 +67,30 @@
       height: 14.8rem;
       box-shadow: 0 2px 12px 4px rgba($color-black, 0.4);
     }
+
+    @include respond(laptop) {
+      left: 23%;
+    }
+
+    @include respond(tab-port) {
+      left: 13%;
+    }
+
+    @include respond(small-screen) {
+      left: 9%;
+    }
+
+    @include respond(phablet) {
+      left: 0%;
+    }
+
+    @include respond(phablet) {
+      left: -14%;
+    }
+
+    @include respond(phone) {
+      left: -20%;
+    }
   }
 
   &__mobile {
@@ -69,6 +105,30 @@
       width: 9.6rem;
       height: 17rem;
       box-shadow: 0 2px 12px 4px rgba($color-black, 0.4);
+    }
+
+    @include respond(laptop) {
+      right: 30%;
+    }
+
+    @include respond(tab-port) {
+      right: 23%;
+    }
+
+    @include respond(small-screen) {
+      right: 19%;
+    }
+
+    @include respond(phablet) {
+      right: 10%;
+    }
+
+    @include respond(phoneL) {
+      right: -5%;
+    }
+
+     @include respond(phone) {
+      right: -14%;
     }
   }
 }
@@ -150,6 +210,8 @@
       display: flex;
       justify-content: center;
       align-items: flex-end;
+      // position: absolute;
+      // bottom: -2px;
 
       .mobile-circle-button {
         width: 1.5rem;
