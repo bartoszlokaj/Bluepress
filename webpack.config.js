@@ -31,7 +31,13 @@ module.exports = {
               hmr: process.env.NODE_ENV === "development"
             }
           },
-          "css-loader",
+          {
+            loader: 'css-loader',
+            options: {
+              url: false
+            }
+          },
+          // "css-loader",
           "sass-loader"
         ]
       },
@@ -65,9 +71,7 @@ module.exports = {
                 interlaced: false
               },
               // the webp option will enable WEBP
-              webp: {
-                quality: 75
-              }
+
             }
           }
         ]
@@ -82,7 +86,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "Front-End Developers",
+      title: "Bluepress",
       minify: {
         collapseWhitespace: true
       },
