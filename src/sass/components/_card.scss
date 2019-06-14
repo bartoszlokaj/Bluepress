@@ -8,6 +8,10 @@
 .values-card {
   margin: 4rem auto;
 
+  @include respond(phoneL) {
+    margin: 0 auto;
+  }
+
   &__list {
     list-style-type: none;
     line-height: 2;
@@ -23,6 +27,16 @@
         font-size: 3rem;
         margin-right: 2rem;
       }
+    }
+
+    @include respond(phone) {
+      line-height: 1.4;
+    }
+  }
+
+  &--second-card {
+    @include respond(tab-port) {
+      display: none;
     }
   }
 }

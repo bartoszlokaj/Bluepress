@@ -81,10 +81,10 @@
     }
 
     @include respond(phablet) {
-      left: 0%;
+      left: 0;
     }
 
-    @include respond(phablet) {
+    @include respond(phoneL) {
       left: -14%;
     }
 

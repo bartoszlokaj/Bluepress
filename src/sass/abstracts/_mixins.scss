@@ -25,7 +25,7 @@ $breakpoint choices:
   }
 
   @if $breakpoint == phone {
-    @media (max-width: 23.4em) { @content };      //375px
+    @media (max-width: 23.5em) { @content };      //375px
   }
 
   @if $breakpoint == phoneL {

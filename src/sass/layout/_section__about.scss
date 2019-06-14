@@ -29,6 +29,10 @@
     width: 60%;
     margin-top: 15rem;
 
+    @include respond(tab-port) {
+      width: 80%;
+    }
+
     @include respond(small-screen) {
       width: 80%;
       margin-top: 7rem;
@@ -45,10 +49,17 @@
 
   .call-to-action {
     width: 60%;
-    margin: 4rem auto 4rem auto;
+    margin: 4rem auto;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
+
+    @include respond(phablet) {
+      width: 90%;
+    }
+    @include respond(phoneL) {
+      margin: 0 auto;
+    }
   }
 }
