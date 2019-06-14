@@ -7,6 +7,14 @@
 
 .values-card {
   margin: 4rem auto;
+  background-image: linear-gradient(
+    to left bottom,
+      rgba($color-light-gray-1, .2),
+      rgba($color-white, .2)
+      ),
+  url(./img/triangles.png);
+  background-repeat: none;
+  background-size: cover;
 
   @include respond(phoneL) {
     margin: 0 auto;
