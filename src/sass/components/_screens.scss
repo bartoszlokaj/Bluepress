@@ -128,7 +128,7 @@
       right: -5%;
     }
 
-     @include respond(phone) {
+    @include respond(phone) {
       right: -14%;
     }
   }

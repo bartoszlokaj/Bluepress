@@ -3,6 +3,7 @@ import imgSvg from "./img/sprite.svg";
 //section hero images
 import imgWork from "./img/work.jpg";
 //section about images
+import imgWork2 from "./img/work-4.jpg";
 import imgChainedPattern from "./img/chained-pattern.png";
 import imgTriangles from './img/triangles.png';
 //section technology images

@@ -3,7 +3,10 @@
     width: 100%;
     min-height: 100rem;
     height: 110vh;
-    background-image: radial-gradient(rgba($color-dark-gray-2,.8), rgba($color-dark-gray-1,.8)),
+    background-image: radial-gradient(
+      rgba($color-dark-gray-2,.8), 
+      rgba($color-dark-gray-1,.8)
+      ),
      url('./img/stars.jpg');
     background-position: center;
     background-repeat: no-repeat;

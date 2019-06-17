@@ -2,11 +2,13 @@
   width: 100%;
   background-image: linear-gradient(
     to bottom,
-    $color-light-gray-1,
-    $color-light-gray-2,
-    $color-light-gray-3
-  );
-  
+    rgba($color-light-gray-1, .9),
+    rgba($color-light-gray-2, .9),
+    rgba($color-light-gray-3, .9)
+  ),
+  url("./img/work-4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   margin-top: -10rem;
   border-bottom: 3px solid $color-primary-blue;
   display: flex;
