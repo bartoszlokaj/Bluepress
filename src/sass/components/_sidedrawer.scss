@@ -8,6 +8,18 @@
   background-color: rgba($color-dark-gray-1, 0.94);
   box-shadow: 2px 0 10px 2px rgba($color-black, 0.4);
 
+  @include respond(small-screen) {
+    width: 70%;
+  }
+
+  @include respond(phoneL) {
+    width: 75%;
+  }
+
+  @include respond(phone) {
+    width: 80%;
+  }
+
   nav {
     display: flex;
     justify-content: center;
