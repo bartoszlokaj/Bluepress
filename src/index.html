@@ -16,9 +16,19 @@
     <title>Bluepress</title>
   </head>
   <body>
-    <div class="backdrop"></div>
+    <div class="backdrop__wrapper">
+      <div class="backdrop"></div>
+    </div>
     <div class="navbar">
+      <div class="hamburger-wrapper">
+        <div class="hamburger">
+          <div class="hamburger__line"></div>
+          <div class="hamburger__line"></div>
+          <div class="hamburger__line"></div>
+        </div>
+      </div>
       <nav class="navbar__nav">
+        
         <ul class="navbar__list">
           <a href="#" class="link link__navbar active"
             ><li class="navbar__list-item">Home</li></a
@@ -31,13 +41,6 @@
           >
         </ul>
       </nav>
-      <div class="hamburger-wrapper">
-        <div class="hamburger">
-          <div class="hamburger__line"></div>
-          <div class="hamburger__line"></div>
-          <div class="hamburger__line"></div>
-        </div>
-      </div>
       <div class="navbar__logo">
         <a href="#" class="link">
           bluepress
@@ -58,21 +61,40 @@
         </div>
       </div>
     </div>
-    <div class="sidedrawer">
-      <nav class="navbar__nav">
-        <ul class="navbar__list">
-          <a href="#" class="link link__navbar active"
-            ><li class="navbar__list-item">Home</li></a
-          >
-          <a href="#" class="link link__navbar"
-            ><li class="navbar__list-item">About</li></a
-          >
-          <a href="#" class="link link__navbar"
-            ><li class="navbar__list-item">Contact</li></a
-          >
-        </ul>
-      </nav>
-    </div>
+      <div class="sidedrawer">
+        <div class="sidedrawer__close">
+          <div class="sidedrawer__close-bar sidedrawer__close-bar--1"></div>
+          <div class="sidedrawer__close-bar sidedrawer__close-bar--2"></div>
+        </div>
+        <nav class="navbar__nav">
+          <ul class="navbar__list">
+            <a href="#" class="link link__navbar active"
+              ><li class="navbar__list-item">Home</li></a
+            >
+            <a href="#" class="link link__navbar"
+              ><li class="navbar__list-item">About</li></a
+            >
+            <a href="#" class="link link__navbar"
+              ><li class="navbar__list-item">Contact</li></a
+            >
+          </ul>
+        </nav>
+        <div class="contact">
+          <div class="contact__phone">
+            <svg class="phone__icon">
+              <use xlink:href="./img/sprite.svg#icon-mobile"></use>
+            </svg>
+            777-888-999
+          </div>
+          <div class="contact__mail">
+            <svg class="mail__icon">
+              <use xlink:href="./img/sprite.svg#icon-mail"></use>
+            </svg>
+            bluepress@office.com
+          </div>
+        </div>
+      </div>
+    
     <main class="container">
       <section class="section__hero">
         <div class="hero__wrapper">

@@ -49,10 +49,14 @@
       @include absoluteCenter;
     }
 
-    @include respond(phone) {
-      margin-right: 5rem;
-      position: unset;
-      transform: unset;
+    @include respond(phoneL) {
+      margin-left: 4rem;
+      
+    }
+
+    @include respond(phoneS) {
+      margin-left: 5rem;
+      
     }
   }
 
