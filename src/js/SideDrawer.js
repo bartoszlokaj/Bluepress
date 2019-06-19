@@ -17,6 +17,4 @@ const sidedrawer = () => {
 
 sidedrawer();
 
-
-
 export default sidedrawer;

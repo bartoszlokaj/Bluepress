@@ -21,9 +21,10 @@ import imgCyclone from "./img/cyclone.png";
 
 //  FUNCTIONS
 ////////////////////////////////////////
-import Sidedrawer from "./js/SideDrawer";
+import Sidedrawer from "./js/Sidedrawer";
 import backdrop from "./js/Backdrop";
 import closeButton from './js/CloseButton';
+import scroll from './js/Scroll';
 
 
 
