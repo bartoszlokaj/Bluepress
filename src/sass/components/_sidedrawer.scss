@@ -12,6 +12,7 @@
   box-shadow: 2px 0 10px 2px rgba($color-black, 0.4);
   display: none;
   transform: translateX(-70rem);
+  animation-fill-mode: forwards;
 
   @include respond(tab-port) {
     display: flex;
@@ -54,13 +55,16 @@
       width: 90%;
       height: 2px;
       background-color: $color-light-gray-1;
+      transform: rotate(135deg);
 
-      &--1 {
-        transform: rotate(45deg) translate(7px, 7px);
-      }
-
-      &--2 {
-        transform: rotate(135deg) translate(-8px, 8px);
+      &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: $color-light-gray-1;
+        position: absolute;
+        transform: rotate(90deg);
       }
     }
   }

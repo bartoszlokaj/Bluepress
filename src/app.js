@@ -22,7 +22,8 @@ import imgCyclone from "./img/cyclone.png";
 //  FUNCTIONS
 ////////////////////////////////////////
 import Sidedrawer from "./js/SideDrawer";
-import backdrop from './js/Backdrop';
+import backdrop from "./js/Backdrop";
+import closeButton from './js/CloseButton';
 
 
 
