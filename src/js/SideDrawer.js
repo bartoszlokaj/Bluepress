@@ -1,5 +1,4 @@
 const btn = document.querySelector(".hamburger-wrapper");
-const backWrap = document.querySelector(".backdrop__wrapper");
 const back = document.querySelector(".backdrop");
 const side = document.querySelector(".sidedrawer");
 const close = document.querySelector(".sidedrawer__close");
