@@ -25,8 +25,8 @@ link.forEach(e => {
 })
 
 const close = () => {
-  backdrop.style.animation = "backdrop-out .5s ease-in-out";
-  sidedrawer.style.animation = "move-to-left .5s ease-in-out forwards";
+  backdrop.style.animation = "backdrop-out .3s ease-in-out";
+  sidedrawer.style.animation = "move-to-left .3s ease-in-out forwards";
 }
 
 export default anchor;
