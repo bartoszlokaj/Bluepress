@@ -1,6 +1,9 @@
-//  IMAGES
+//  ICONS
 ////////////////////////////////////
 import imgSvg from "./img/sprite.svg";
+
+//  IMAGES
+////////////////////////////////////
 //section hero images
 import imgWork from "./img/work.jpg";
 //section about images
@@ -21,12 +24,11 @@ import imgCyclone from "./img/cyclone.png";
 
 //  FUNCTIONS
 ////////////////////////////////////////
-import Sidedrawer from "./js/Sidedrawer";
+import anchor from './js/Anchor';
 import backdrop from "./js/Backdrop";
 import closeButton from './js/CloseButton';
 import scroll from './js/Scroll';
-
-
+import Sidedrawer from "./js/Sidedrawer";
 
 
 const scss = require('./sass/main.scss');
