@@ -22,7 +22,8 @@
       rgba($color-primary-blue, 0.8),
       rgba($color-secondary-green, 0.8)
     ),
-    url('./img/work.jpg');
+    url("./img/work.jpg");
+  background-blend-mode: darken;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
