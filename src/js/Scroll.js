@@ -1,55 +1,33 @@
-import anchor from './Anchor';
-
-const smoothScroll = (tar, duration) => {
-  let target = document.querySelector(tar);
-  let targetPosition = target.getBoundingClientRect().top;
-  let startPosition = window.pageYOffset;
-  let distance = targetPosition - startPosition;
-  let startTime = null;
-
-  let animation = currentTime => {
-    if (startTime === null) startTime = currentTime;
-    let timeElapsed = currentTime - startTime;
-    let run = easeInOut(timeElapsed, startPosition, distance, duration);
-    window.scrollTo(0, run);
-    if (timeElapsed < duration) requestAnimationFrame(animation);
-
-    function easeInOut(t, b, c, d) {
-      t /= d / 2;
-      if (t < 1) return (c / 2) * t * t * t * t * t + b;
-      t -= 2;
-      return (c / 2) * (t * t * t * t * t + 2) + b;
-    }
-  };
-
-  requestAnimationFrame(animation);
-
-  console.log(target);
-  console.log(targetPosition);
-  console.log(startPosition);
+window.onscroll = function() {
+  active();
 };
 
-////  LINKS
-////////////////////////////
-let swiper = document.querySelector(".swipe");
-let linksHome = document.querySelectorAll(".link--home");
-let linksAbout = document.querySelectorAll('.link--about');
-console.log(linksAbout);
+const backdrop = document.querySelector(".backdrop");
+const sidedrawer = document.querySelector('.sidedrawer');
 
-swiper.addEventListener("click", () => {
-  smoothScroll(".section__about", 500);
-});
+let link = document.querySelectorAll(".link");
 
-linksHome.forEach(e => {
-  e.addEventListener("click", () => {
-    smoothScroll(".section__hero", 500);
-  });
-});
+let active = () => {
+    if (
+      document.body.scrollTop > 50 ||
+      document.documentElement.scrollTop > 50
+    ) {
+      document.querySelector(".link--about").classList.add('active');
+    } else {
+      document.querySelector(".link--about").classList.remove("active");
+    }
+  
+};
 
-linksAbout.forEach(e => {
+link.forEach(e => {
   e.addEventListener('click', () => {
-    smoothScroll(".section__about", 500);
+    close();
   })
 })
 
-export default smoothScroll;
+const close = () => {
+  backdrop.style.animation = "backdrop-out .3s ease-in-out";
+  sidedrawer.style.animation = "move-to-left .3s ease-in-out forwards";
+}
+
+export default scroll;

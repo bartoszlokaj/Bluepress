@@ -24,10 +24,9 @@ import imgCyclone from "./img/cyclone.png";
 
 //  FUNCTIONS
 ////////////////////////////////////////
-import anchor from './js/Anchor';
+import scroll from './js/Scroll';
 import backdrop from "./js/Backdrop";
 import closeButton from './js/CloseButton';
-import scroll from './js/Scroll';
 import Sidedrawer from "./js/Sidedrawer";
 
 

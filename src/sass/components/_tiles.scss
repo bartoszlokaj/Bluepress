@@ -17,6 +17,10 @@
 
     &--2 {
       margin-top: 4rem;
+
+      @include respond(phoneS) {
+        margin-top: 3rem;
+      }
     }
 
     &--3 {

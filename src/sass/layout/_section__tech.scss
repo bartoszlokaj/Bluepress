@@ -3,6 +3,7 @@
     width: 100%;
     min-height: 100rem;
     height: 110vh;
+    padding: 0 2rem;
     background-image: radial-gradient(
       rgba($color-dark-gray-2,.8), 
       rgba($color-dark-gray-1,.8)
@@ -30,6 +31,7 @@
 
       @include respond(small-screen) {
         width: 100%;
+        margin-top: 4rem;
       }
     }
     .tiles {

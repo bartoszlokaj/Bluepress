@@ -37,8 +37,8 @@ body {
     color: $color-dark-gray-2;
   }
 
-  @include respond(phoneS) {
-    font-size: 2.2rem;
+  @include respond(phone) {
+    font-size: 2rem;
   }
 }
 
@@ -54,7 +54,7 @@ body {
 
   @include respond(small-screen) {
     letter-spacing: 6px;
-    font-size: 3rem;
+    font-size: 2.7rem;
   }
 
   @include respond(phablet) {
@@ -62,12 +62,11 @@ body {
   }
 
   @include respond(phone) {
-    font-size: 3rem;
     letter-spacing: 2px;
   }
 
   @include respond(phoneS) {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   }
 
   &--tech {
@@ -100,8 +99,14 @@ body {
     font-size: 4rem;
   }
 
+  @include respond(phone) {
+    font-size: 3.4rem;
+  }
+
+
   @include respond(phoneS) {
     font-size: 3.2rem;
+    letter-spacing: 5px;
   }
 }
 
@@ -126,6 +131,10 @@ body {
 
   @include respond(phoneL) {
     font-size: 1.8rem;
+  }
+
+  @include respond(phoneS){
+    font-size: 1.6rem
   }
 }
 

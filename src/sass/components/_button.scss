@@ -27,6 +27,14 @@
       background-color: $color-secondary-green;
     }
 
+    @include respond(tab-land) {
+      width: 47rem;
+    }
+
+    @include respond(phoneL) {
+      width: 43rem;
+    }
+
     @include respond(phoneL) {
       margin: 6rem auto;
     }

@@ -29,19 +29,25 @@
       <nav class="navbar__nav">
         
         <ul class="navbar__list">
-          <a href="#" class="link link__navbar link--home active"
+          <a href="#section1" class="link link__navbar link--home active"
             ><li class="navbar__list-item">Home</li></a
           >
-          <a href="#" class="link link__navbar link--about"
+          <a href="#section2" class="link link__navbar link--about"
             ><li class="navbar__list-item">About</li></a
           >
-          <a href="#" class="link link__navbar link--contact"
+          <a href="#section3" class="link link__navbar link--tech"
+              ><li class="navbar__list-item">Tech</li></a
+            >
+          <a href="#section4" class="link link__navbar link--offer"
+            ><li class="navbar__list-item">Offer</li></a
+          >
+          <a href="#section5" class="link link__navbar link--contact"
             ><li class="navbar__list-item">Contact</li></a
           >
         </ul>
       </nav>
       <div class="navbar__logo">
-        <a href="#" class="link link--home">
+        <a href="#section1" class="link link--home">
           bluepress
         </a>
       </div>
@@ -67,13 +73,19 @@
         </div>
         <nav class="navbar__nav">
           <ul class="navbar__list">
-            <a href="#" class="link link__navbar link--home active"
+            <a href="#section1" class="link link__navbar link--home active"
               ><li class="navbar__list-item">Home</li></a
             >
-            <a href="#" class="link link__navbar link--about"
+            <a href="#section2" class="link link__navbar link--about"
               ><li class="navbar__list-item">About</li></a
             >
-            <a href="#" class="link link__navbar link--contact"
+            <a href="#section3" class="link link__navbar link--tech"
+              ><li class="navbar__list-item">Tech</li></a
+            >
+            <a href="#section4" class="link link__navbar link--offer"
+              ><li class="navbar__list-item">Offer</li></a
+            >
+            <a href="#section5" class="link link__navbar link--contact"
               ><li class="navbar__list-item">Contact</li></a
             >
           </ul>
@@ -95,26 +107,28 @@
     </div>
     
     <main class="container">
-      <section class="section__hero">
+      <section class="section__hero" id="section1">
         <div class="hero__wrapper">
           <div class="hero">
             <h1 class="header main-header">
               Beautiful and fast websites
               <h2 class="header sub-header">
-                Save Your time and money<br />
-                We will do it!
+                Made for all Your <br />
+                business needs
               </h2>
             </h1>
 
-            <div class="swipe__wrapper">
-              <div class="swipe">
-                <div class="swipe__circle"></div>
+            <a href="#section2">
+              <div class="swipe__wrapper">
+                <div class="swipe">
+                  <div class="swipe__circle"></div>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </section>
-      <section class="section__about">
+      <section class="section__about" id="section2">
         <div class="about">
           <div class="about__text">
             <h2 class="header header--about">
@@ -317,12 +331,11 @@
           </div>
         </div>
       </section>
-      <section class="section__tech">
+      <section class="section__tech" id="section3">
         <div class="tech">
           <div class="tech__text">
             <h2 class="header header--tech">
-              Front-end Development<br />
-              PSD to HTML
+              Front-end Development
             </h2>
             <p class="paragraph">
               <strong>PSD / Sketch to HTML conversion services.</strong>
@@ -389,7 +402,7 @@
           </div>
         </div>
       </section>
-      <section class="section__offer">
+      <section class="section__offer" id="section4">
         <div class="offer__wrapper">
           <div class="offer"></div>
         </div>

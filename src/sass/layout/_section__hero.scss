@@ -5,8 +5,8 @@
     rgba($color-dark-gray-1, 1)
   );
   background-color: $color-dark-gray-1;
-  height: 101vh;
-  min-height: 75rem;
+  height: 100vh;
+  min-height: 71rem;
   width: 100%;
   -webkit-clip-path: ellipse(100% 65% at 50% 35%);
   clip-path: ellipse(100% 64% at 50% 35%);
@@ -17,6 +17,9 @@
 }
 
 .hero {
+  height: 99vh;
+  min-height: 70rem;
+  padding: 0 2rem;
   background-image: linear-gradient(
       to right bottom,
       rgba($color-primary-blue, 0.8),
@@ -27,8 +30,6 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 100vh;
-  min-height: 74rem;
   -webkit-clip-path: ellipse(100% 65% at 50% 35%);
   clip-path: ellipse(100% 64% at 50% 35%);
   display: flex;
