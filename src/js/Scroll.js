@@ -1,6 +1,4 @@
-window.onscroll = function() {
-  active();
-};
+window.onscroll = function() {active()};
 
 const backdrop = document.querySelector(".backdrop");
 const sidedrawer = document.querySelector('.sidedrawer');
@@ -8,13 +6,29 @@ const sidedrawer = document.querySelector('.sidedrawer');
 let link = document.querySelectorAll(".link");
 
 let active = () => {
+  let heroLink = document.querySelectorAll(".link--hero");
+  let aboutLink = document.querySelectorAll(".link--about");
+  let techLink = document.querySelectorAll(".link--tech");
+  let offerLink = document.querySelectorAll('.link--offer');
+
+  let heroPosition = document.querySelector(".section__hero");
+  let aboutPosition = document.querySelector(".section__about");
+  let techPosition = document.querySelector(".section__tech");
+  let offerPosition = document.querySelector('.section__offer');
+  
+  let heroHeight = heroPosition.height;
+  console.log(heroHeight);
+
     if (
-      document.body.scrollTop > 50 ||
-      document.documentElement.scrollTop > 50
+      document.body.scrollTop > aboutPosition.getBoundingClientRect().top 
     ) {
-      document.querySelector(".link--about").classList.add('active');
+      aboutLink.forEach(e => {
+        e.classList.add("active");
+      });
     } else {
-      document.querySelector(".link--about").classList.remove("active");
+      aboutLink.forEach(e => {
+        e.classList.remove("active");
+      });
     }
   
 };
