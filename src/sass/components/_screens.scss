@@ -3,6 +3,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  margin-top: 7rem;
 
   @include respond(phablet) {
     transform: scale(0.9);
@@ -10,6 +11,7 @@
 
   @include respond(phoneL) {
     transform: scale(0.76);
+    margin-top: 0;
   }
 
   @include respond(phone) {
