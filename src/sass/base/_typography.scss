@@ -5,6 +5,9 @@ body {
   color: $color-light-gray-1;
 }
 
+
+//COMPONENTS
+/////////////////
 .navbar {
   font-size: 2rem;
   text-align: center;
@@ -37,11 +40,23 @@ body {
     color: $color-dark-gray-2;
   }
 
+  &--card {
+    color: $color-secondary-dark;
+    font-weight: bold;
+  }
+
   @include respond(phone) {
     font-size: 2rem;
   }
 }
 
+.card--offer {
+  font-size: 2rem;
+  text-align: center;
+}
+
+// HEADERS
+///////////////////
 .header {
   font-family: "Raleway", sans-serif;
   font-weight: 300;
@@ -140,6 +155,23 @@ body {
   }
 }
 
+// PARAGRAPHS
+//////////////////
+.paragraph {
+  margin-top: 2rem;
+  line-height: 1.6;
+
+  &--top {
+    margin-top: 4rem;
+  }
+
+  @include respond(phablet) {
+    line-height: 1.4;
+  }
+}
+
+// SECTIONS
+//////////////////
 .section__about {
   color: $color-dark-gray-2;
   font-size: 2.2rem;
@@ -181,15 +213,4 @@ body {
   }
 }
 
-.paragraph {
-  margin-top: 2rem;
-  line-height: 1.6;
 
-  &--top {
-    margin-top: 4rem;
-  }
-
-  @include respond(phablet) {
-    line-height: 1.4;
-  }
-}

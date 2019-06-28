@@ -45,14 +45,10 @@
 
     &__row {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       align-items: center;
       flex-flow: row wrap;
       margin: 7rem 0;
-
-      @include respond(small-screen) {
-        justify-content: space-around;
-      }
 
       @include respond(phablet) {
         justify-content: space-around;

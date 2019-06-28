@@ -1,11 +1,22 @@
 .card {
-  margin: 2.5rem;
   background-color: $color-light-gray-1;
   border-radius: 5px;
   overflow: hidden;
   box-shadow: 0 0 8px rgba($color-dark-gray-1, 0.8);
-  width: 30rem;
-  height: 48rem;
+
+  &--offer {
+    width: 33rem;
+    height: 52rem;
+    margin: 2.5rem;
+
+    @include respond(phone) {
+      width: 100%;
+    }
+
+    @include respond(phoneS) {
+      margin: 2.5rem 1rem;
+    }
+  }
 
   &__img {
     width: 100%;
@@ -43,6 +54,28 @@
           rgba($color-secondary-green, 0.8)
         ),
         url("./img/cyan-2.jpg");
+    }
+  }
+
+  &__text {
+    width: 100%;
+    height: 50%;
+    padding: 2rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__list {
+    list-style-type: none;
+
+    &-item {
+      margin-bottom: 1.5rem;
+
+      &:last-child {
+        margin-bottom: 2rem;
+      }
     }
   }
 
