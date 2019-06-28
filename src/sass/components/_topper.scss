@@ -1,0 +1,33 @@
+.topper {
+  width: 6rem;
+  height: 6rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba($color-light-gray-1, 0.85);
+  border-radius: 50%;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 100;
+  box-shadow: 0 0 5px rgba($color-black, 0.6);
+
+  &__bar {
+    height: 70%;
+    width: 4px;
+    border-radius: 3px;
+    background-color: $color-dark-gray-1;
+
+    &--1 {
+      transform: rotate(40deg);
+      margin-left: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    &--2 {
+      transform: rotate(-40deg);
+      margin-right: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+}
