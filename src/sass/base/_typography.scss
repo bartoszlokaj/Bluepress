@@ -55,6 +55,7 @@ body {
   @include respond(small-screen) {
     letter-spacing: 6px;
     font-size: 2.7rem;
+    text-shadow: 0 1px 3px rgba($color-dark-gray-1, 0.6);
   }
 
   @include respond(phablet) {
@@ -142,6 +143,23 @@ body {
   font-size: 2rem;
   @include respond(small-screen) {
     text-align: center;
+  }
+}
+
+.section__offer {
+  color: $color-dark-gray-2;
+  font-size: 2.2rem;
+
+  @include respond(laptop) {
+    font-size: 2rem;
+  }
+
+  @include respond(phoneL) {
+    font-size: 1.8rem;
+  }
+
+  @include respond(phoneS){
+    font-size: 1.6rem
   }
 }
 

@@ -4,13 +4,17 @@
     align-items: center;
     margin-top: -12rem;
     width: 100%;
-    height: 102vh;
+    min-height: 102vh;
     background-image: linear-gradient(
       to right,
       rgba($color-dark-gray-1, 1),
       rgba($color-primary-blue, 1)
     );
     clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+
+    @include respond(tab-land) {
+      clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0% 100%);
+    }
 
     @include respond(small-screen) {
       clip-path: none;
@@ -20,14 +24,31 @@
 
   .offer {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     padding: 0 2rem;
-    background-image: radial-gradient($color-light-gray-1, $color-light-gray-2);
+
+    background-image: linear-gradient(
+      to bottom,
+      rgba($color-light-gray-1, 0.9),
+      rgba($color-light-gray-2, 0.9)
+    );
 
     clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
 
+    @include respond(tab-land) {
+      clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0% 100%);
+    }
+
     @include respond(small-screen) {
       clip-path: none;
+    }
+
+    .header--offer {
+      margin-top: 12rem;
+
+      @include respond(small-screen) {
+        margin-top: 7rem;
+      }
     }
   }
 }
