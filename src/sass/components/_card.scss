@@ -1,18 +1,61 @@
 .card {
-  padding: 2.5rem;
+  margin: 2.5rem;
   background-color: $color-light-gray-1;
   border-radius: 5px;
+  overflow: hidden;
   box-shadow: 0 0 12px rgba($color-dark-gray-1, 0.8);
+  width: 30rem;
+  height: 48rem;
+  
+  &--img {
+    width: 100%;
+    height: 50%;
+    padding: 2rem;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-blue, 0.8),
+        rgba($color-secondary-green, 0.8)
+      ),
+      url("./img/cyan-4.jpg");
+    background-blend-mode: hard-light;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  
+  &--3 {
+    @include respond(small-screen) {
+      margin: 5rem auto 0 auto;
+    }
+
+    @include respond(phablet) {
+      margin: 2.5rem;
+    }
+  }
+
+
+  &--text-box {
+    background-image: linear-gradient(
+      to left bottom,
+      rgba($color-tertiary, 0.8),
+      rgba($color-secondary-green, 0.8)
+    );
+    padding: 0 0.7rem;
+    font-size: 2rem;
+  }
 }
 
 .values-card {
   margin: 4rem auto;
+  padding: 2.5rem;
   background-image: linear-gradient(
-    to left bottom,
-      rgba($color-light-gray-1, .2),
-      rgba($color-white, .2)
-      ),
-  url(./img/triangles.png);
+      to left bottom,
+      rgba($color-light-gray-1, 0.2),
+      rgba($color-white, 0.2)
+    ),
+    url(./img/triangles.png);
   background-repeat: none;
   background-size: cover;
 

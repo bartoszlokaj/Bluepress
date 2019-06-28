@@ -19,6 +19,11 @@ import imgJs from "./img/js-icon.png";
 import imgPhotoshop from "./img/photoshop-icon.png";
 import imgSass from "./img/sass-icon.png";
 import imgCyclone from "./img/cyclone.png";
+//section offer images
+import imgCyan1 from "./img/cyan-1.jpg";
+import imgCyan2 from "./img/cyan-2.jpg";
+import imgCyan3 from "./img/cyan-3.jpg";
+import imgCyan4 from './img/cyan-4.jpg';
 
 
 

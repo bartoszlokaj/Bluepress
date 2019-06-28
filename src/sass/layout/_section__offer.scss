@@ -43,11 +43,20 @@
       clip-path: none;
     }
 
-    .header--offer {
-      margin-top: 12rem;
+    &__row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-flow: row wrap;
+      margin: 7rem 0;
 
       @include respond(small-screen) {
-        margin-top: 7rem;
+        justify-content: space-around;
+      }
+
+      @include respond(phablet) {
+        justify-content: space-around;
+        margin: 3rem 0;
       }
     }
   }

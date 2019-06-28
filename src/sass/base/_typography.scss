@@ -78,6 +78,18 @@ body {
       text-align: center;
     }
   }
+
+  &--offer {
+      margin-top: 12rem;
+
+      @include respond(small-screen) {
+        margin-top: 7rem;
+      }
+    }
+
+  &--small {
+    font-size: 2.4rem;
+  }
 }
 
 .main-header {
