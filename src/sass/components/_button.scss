@@ -47,6 +47,7 @@
     border: 2px solid $color-secondary-dark;
     box-shadow: 0 0 5px rgba(102, 102, 102, 0.7);
     outline: none;
+    -webkit-tap-highlight-color: transparent;
 
     &:active {
       transform: translateY(1px);

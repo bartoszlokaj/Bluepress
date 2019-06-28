@@ -4,7 +4,8 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: rgba($color-light-gray-1, 0.85);
+  background-image: radial-gradient($color-white, $color-light-gray-2);
+  opacity: 0.85;
   border-radius: 50%;
   position: fixed;
   bottom: 2rem;
@@ -13,20 +14,21 @@
   box-shadow: 0 0 5px rgba($color-black, 0.6);
 
   &__bar {
-    height: 70%;
+    margin-top: 0.3rem;
+    height: 2.8rem;
     width: 4px;
-    border-radius: 3px;
-    background-color: $color-dark-gray-1;
+    border-radius: 2px;
+    background-color: rgba($color-dark-gray-1, .85);
 
     &--1 {
-      transform: rotate(40deg);
-      margin-left: 0.5rem;
+      transform: rotate(45deg);
+      margin-left: 1.3rem;
       margin-bottom: 0.5rem;
     }
 
     &--2 {
-      transform: rotate(-40deg);
-      margin-right: 0.5rem;
+      transform: rotate(-45deg);
+      margin-right: 1.3rem;
       margin-bottom: 0.5rem;
     }
   }
