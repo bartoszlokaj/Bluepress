@@ -48,6 +48,7 @@
     box-shadow: unset;
     outline: none;
     -webkit-tap-highlight-color: transparent;
+    transition: all .1s ease-in-out;
 
     &:active {
       box-shadow: 0 0 5px rgba($color-green, 0.9);
