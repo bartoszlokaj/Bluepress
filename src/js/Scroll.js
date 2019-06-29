@@ -4,6 +4,7 @@ window.onscroll = function() {
 
 const backdrop = document.querySelector(".backdrop");
 const sidedrawer = document.querySelector(".sidedrawer");
+const topperBtn = document.querySelector(".topper");
 
 let link = document.querySelectorAll(".link");
 
@@ -49,7 +50,8 @@ let active = () => {
       aboutLink.forEach(e => {
         e.classList.add("active");
       });
-    } else {
+      topperBtn.style.animation = "topper-in .4s ease-in-out forwards";
+    }  else {
       aboutLink.forEach(e => {
         e.classList.remove("active");
       });
@@ -61,6 +63,12 @@ let active = () => {
       aboutLink.forEach(e => {
         e.classList.remove("active");
       });
+    }
+    if (
+      document.body.scrollTop <
+      aboutPosition.getBoundingClientRect().top - 1
+    ) {
+      topperBtn.style.animation = "topper-out .4s ease-in-out forwards";
     }
   };
   activeAbout();

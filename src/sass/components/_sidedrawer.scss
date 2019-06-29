@@ -8,7 +8,7 @@
   width: 60%;
   height: 100vh;
   z-index: 9999;
-  background-color: rgba($color-dark-gray-1, 0.94);
+  background-color: $color-dark-gray-1;
   box-shadow: 2px 0 10px 2px rgba($color-black, 0.4);
   display: none;
   transform: translateX(-70rem);
