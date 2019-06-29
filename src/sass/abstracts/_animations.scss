@@ -156,6 +156,40 @@
   }
 }
 
+@keyframes topper-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20vh);
+  }
+
+  1% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes topper-out {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  99% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(20vh);
+  }
+}
+
 .main-header {
   animation: expand-and-move-up 1.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 

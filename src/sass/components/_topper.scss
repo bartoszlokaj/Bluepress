@@ -12,7 +12,8 @@
   right: 2rem;
   z-index: 100;
   box-shadow: 0 0 5px rgba($color-black, 0.6);
-  transition: all .3s ease-in-out;
+  transform: translateY(20vh);
+  transition: all .15s ease-in-out;
 
   &__bar {
     margin-top: 0.3rem;
