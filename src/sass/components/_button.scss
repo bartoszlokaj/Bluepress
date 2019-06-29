@@ -44,14 +44,14 @@
     background-color: unset;
     padding: 1rem 1.3rem;
     margin-top: 1rem auto;
-    border: 2px solid $color-secondary-dark;
-    box-shadow: 0 0 5px rgba(102, 102, 102, 0.7);
+    border: 2px solid $color-green;
+    box-shadow: unset;
     outline: none;
     -webkit-tap-highlight-color: transparent;
 
     &:active {
-      transform: translateY(1px);
-      box-shadow: 0 0 3px rgba($color-dark-gray-2, 0.9);
+      box-shadow: 0 0 5px rgba($color-green, 0.9);
+      transform: unset;
     }
   }
 }
