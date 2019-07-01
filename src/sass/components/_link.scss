@@ -8,8 +8,13 @@
   }
 }
 
+.link__contact:hover,
+.link__contact:active {
+  color: unset;
+}
+
 .link:active {
-  color: $color-primary-blue;
+  // color: $color-primary-blue;
 }
 
 .link__navbar {

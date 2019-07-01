@@ -27,22 +27,23 @@ body {
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  cursor: default;
 }
 
 .button {
   font-family: "Raleway", sans-serif;
   letter-spacing: 1px;
   color: $color-light-gray-2;
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-align: center;
 
   &--cta {
     color: $color-dark-gray-2;
+    font-size: 2.5rem;
   }
 
   &--card {
     color: $color-green;
-    font-weight: bold;
   }
 
   @include respond(phone) {
