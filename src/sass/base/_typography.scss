@@ -126,6 +126,7 @@ body {
   }
 
   @include respond(phablet) {
+    margin-top: 12rem;
     font-size: 4.5rem;
   }
 
