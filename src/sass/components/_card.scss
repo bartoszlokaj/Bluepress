@@ -129,9 +129,13 @@
       padding: 1rem;
 
       .values-card__plus {
-        color: $color-secondary-green;
+        color: $color-green;
         font-size: 3rem;
         margin-right: 2rem;
+      }
+
+      &:last-child {
+        border-bottom: none;
       }
     }
 
