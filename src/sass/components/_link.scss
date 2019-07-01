@@ -8,6 +8,10 @@
   }
 }
 
+.link--no-touch-effect{
+  -webkit-tap-highlight-color: transparent;
+}
+
 .link__contact:hover,
 .link__contact:active {
   color: unset;
