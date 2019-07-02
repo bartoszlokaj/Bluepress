@@ -98,7 +98,7 @@ body {
   &--offer {
       margin-top: 12rem;
 
-      @include respond(small-screen) {
+      @include respond(laptop) {
         margin-top: 7rem;
       }
     }

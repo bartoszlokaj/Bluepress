@@ -3,6 +3,7 @@
   border-radius: 5px;
   overflow: hidden;
   box-shadow: 0 0 8px rgba($color-dark-gray-1, 0.8);
+  margin: 2.5rem;
 
   &--offer {
     width: 33rem;
@@ -13,7 +14,11 @@
       margin: 5rem 2.5rem;
     }
 
-    @include respond(phone) {
+    @include respond(phoneL) {
+      width: 94%;
+    }
+
+    @include respond(phoneS) {
       width: 100%;
     }
 
@@ -106,7 +111,7 @@
 }
 
 .values-card {
-  margin: 4rem auto;
+  margin: 4rem 2.5rem;
   padding: 2.5rem;
   background-image: linear-gradient(
       to left bottom,
@@ -147,7 +152,7 @@
   }
 
   &--second-card {
-    @include respond(tab-port) {
+    @include respond(tab-land) {
       display: none;
     }
   }
