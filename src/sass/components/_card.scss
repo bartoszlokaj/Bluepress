@@ -101,9 +101,11 @@
   }
 
   &--2 {
-    transform: scale(1.07);
+    transform: scale(1.08);
+    box-shadow: 0 0 12px rgba($color-dark-gray-1, 0.8);
 
     @include respond(tab-port) {
+      box-shadow: 0 0 8px rgba($color-dark-gray-1, 0.8);
       transform: unset;
       order: -1;
     }
