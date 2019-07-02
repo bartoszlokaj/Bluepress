@@ -2,7 +2,6 @@ window.onscroll = function() {
   active();
 };
 
-const backdrop = document.querySelector(".backdrop");
 const sidedrawer = document.querySelector(".sidedrawer");
 const topperBtn = document.querySelector(".topper");
 
