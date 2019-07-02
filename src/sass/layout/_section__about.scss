@@ -25,14 +25,13 @@
     margin-top: 0;
   }
 
+
+
   &__text {
     display: flex;
     flex-flow: column;
     justify-content: center;
     width: 60%;
-    margin-top: 15rem;
-
-
 
     @include respond(tab-port) {
       width: 80%;
