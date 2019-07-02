@@ -9,12 +9,16 @@
     height: 52rem;
     margin: 2.5rem;
 
+    @include respond(tab-port) {
+      margin: 5rem 2.5rem;
+    }
+
     @include respond(phone) {
       width: 100%;
     }
 
     @include respond(phoneS) {
-      margin: 2.5rem 1rem;
+      margin: 5rem 1rem;
     }
   }
 
@@ -79,25 +83,24 @@
     }
   }
 
-  &--text-box {
+  &__text-box {
+    padding: 0 0.7rem;
+    font-size: 2rem;
+    border-radius: 2px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
     background-image: linear-gradient(
       to left bottom,
       rgba($color-tertiary, 0.8),
       rgba($color-secondary-green, 0.8)
     );
-    padding: 0 0.7rem;
-    font-size: 2rem;
-    border-radius: 2px;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
   }
 
-  &--3 {
-    @include respond(small-screen) {
-      margin: 5rem auto 0 auto;
-    }
+  &--2 {
+    transform: scale(1.07);
 
-    @include respond(phablet) {
-      margin: 2.5rem;
+    @include respond(tab-port) {
+      transform: unset;
+      order: -1;
     }
   }
 }
@@ -126,7 +129,6 @@
       display: flex;
       align-items: center;
       border-bottom: 2px dotted $color-light-gray-3;
-      padding: 1rem;
 
       .values-card__plus {
         color: $color-green;

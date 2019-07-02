@@ -4,16 +4,16 @@
     align-items: center;
     margin-top: -12rem;
     width: 100%;
-    min-height: 102vh;
+    min-height: 94vh;
     background-image: linear-gradient(
       to right,
       rgba($color-dark-gray-1, 1),
       rgba($color-primary-blue, 1)
     );
-    clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+    clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
 
     @include respond(tab-land) {
-      clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0% 100%);
+      clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0% 100%);
     }
 
     @include respond(small-screen) {
@@ -24,8 +24,11 @@
 
   .offer {
     width: 100%;
-    min-height: 100vh;
+    min-height: 92vh;
     padding: 0 2rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
 
     background-image: linear-gradient(
       to bottom,
@@ -33,10 +36,10 @@
       rgba($color-light-gray-2, 0.9)
     );
 
-    clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+    clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
 
     @include respond(tab-land) {
-      clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0% 100%);
+      clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0% 100%);
     }
 
     @include respond(small-screen) {
@@ -48,11 +51,11 @@
       justify-content: space-around;
       align-items: center;
       flex-flow: row wrap;
-      margin: 7rem 0;
 
-      @include respond(phablet) {
+      @include respond(tab-port) {
+        flex-flow: column;
         justify-content: space-around;
-        margin: 3rem 0;
+        align-items: center;
       }
     }
   }
