@@ -5,7 +5,6 @@ body {
   color: $color-light-gray-1;
 }
 
-
 //COMPONENTS
 /////////////////
 .navbar {
@@ -90,6 +89,14 @@ body {
     margin-top: 15rem;
   }
 
+  &--paragraph {
+    font-size: 2rem;
+    text-align: left;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 3px;
+    font-weight: 400;
+  }
+
   &--tech {
     text-transform: capitalize;
     text-align: left;
@@ -100,12 +107,12 @@ body {
   }
 
   &--offer {
-      margin-top: 10rem;
+    margin-top: 10rem;
 
-      @include respond(laptop) {
-        margin-top: 7rem;
-      }
+    @include respond(laptop) {
+      margin-top: 7rem;
     }
+  }
 
   &--small {
     font-size: 2.5rem;
@@ -143,7 +150,6 @@ body {
     font-size: 3.4rem;
   }
 
-
   @include respond(phoneS) {
     font-size: 3.2rem;
     letter-spacing: 5px;
@@ -170,7 +176,7 @@ body {
   line-height: 1.6;
 
   &--top {
-    margin-top: 4rem;
+    margin-top: 1rem;
   }
 
   @include respond(phablet) {
@@ -192,8 +198,8 @@ body {
     font-size: 1.8rem;
   }
 
-  @include respond(phoneS){
-    font-size: 1.6rem
+  @include respond(phoneS) {
+    font-size: 1.6rem;
   }
 }
 
@@ -216,9 +222,7 @@ body {
     font-size: 1.8rem;
   }
 
-  @include respond(phoneS){
-    font-size: 1.6rem
+  @include respond(phoneS) {
+    font-size: 1.6rem;
   }
 }
-
-
