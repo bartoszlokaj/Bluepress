@@ -8,7 +8,7 @@ import imgSvg from "./img/sprite.svg";
 import imgWork from "./img/work.jpg";
 //section about images
 import imgWork2 from "./img/work-4.jpg";
-import imgMobile from "./img/mobile-2.jpg"
+import imgMobile from "./img/mobile-1.jpg"
 import imgTriangles from './img/triangles.png';
 //section technology images
 import imgStars from './img/stars.jpg';
