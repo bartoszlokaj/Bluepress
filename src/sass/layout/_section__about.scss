@@ -26,20 +26,19 @@
   }
 
   &__row {
+    width: 82%;
     display: flex;
     flex-wrap: wrap;
     margin: 6rem 0 4rem 0;
 
     .about__gallery {
       width: 50%;
-      padding-right: 12rem;
       display: flex;
-      justify-content: flex-end;
+      justify-content: center;
     }
 
     .about__text {
       width: 50%;
-      padding: 0 17rem 0 10rem;
 
       @include respond(tab-port) {
         width: 80%;
