@@ -3,15 +3,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 0 26px rgba($color-black, 0.5);
+
   &::before {
     content: "";
-    width: 105%;
-    height: 105%;
+    width: calc(100% + 1.5rem);
+    height: calc(100% + 1.5rem);
     border-radius: 2px;
     @include absoluteCenter;
     z-index: 0;
     background-color: $color-primary-blue;
-    box-shadow: 0 0 6px rgba($color-black, 0.5);
   }
   &::after {
     content: "";
@@ -23,6 +24,25 @@
     background-color: $color-primary-blue;
     opacity: 0.2;
     background-blend-mode: color-burn;
+  }
+
+  &--2 {
+    box-shadow: unset;
+
+    &::before {
+      content: "";
+      width: 105%;
+      height: 105%;
+      border-radius: 2px;
+      @include absoluteCenter;
+      z-index: 0;
+      background-color: $color-secondary-green;
+    }
+
+    &::after {
+      content: "";
+      background-color: transparent;
+    }
   }
 
   .picture {
@@ -48,6 +68,30 @@
       @include respond(phoneS) {
         height: 22.6rem;
       }
+    }
+
+    &--2 {
+      height: 37rem;
+
+      @include respond(phablet) {
+        height: 35rem;
+      }
+
+      @include respond(phoneL) {
+        height: 28.5rem;
+      }
+
+      @include respond(phone) {
+        height: 24rem;
+      }
+
+      @include respond(phoneS) {
+        height: 20.6rem;
+      }
+    }
+
+    .dupa {
+      height: 18rem;
     }
   }
 }

@@ -30,6 +30,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     margin: 6rem 0 4rem 0;
 
     @include respond(laptop) {
@@ -38,6 +39,10 @@
 
     @include respond(tab-land) {
       justify-content: center;
+    }
+
+    @include respond(phablet) {
+      margin: 4rem 0;
     }
 
     .about__gallery {
@@ -50,8 +55,8 @@
       width: 50%;
 
       @include respond(tab-land) {
-      margin-top: 7rem;
-    }
+        margin-top: 7rem;
+      }
 
       @include respond(tab-port) {
         width: 80%;
@@ -59,33 +64,10 @@
 
       @include respond(phablet) {
         width: 100%;
-      margin-top: 4rem;
-
+        margin-top: 4rem;
       }
     }
   }
 
-  &__action {
-    width: 100%;
-  }
-
-  .call-to-action {
-    width: 60%;
-    margin: 4rem auto;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center;
-
-    @include respond(tab-land) {
-      justify-content: center;
-    }
-
-    @include respond(phablet) {
-      width: 90%;
-    }
-    @include respond(phoneL) {
-      margin: 0 auto;
-    }
-  }
+  
 }

@@ -86,7 +86,11 @@ body {
   }
 
   &--about {
+    margin-top: 15rem;
+
+    @include respond(phablet) {
     margin-top: 7rem;
+  }
   }
 
   &--paragraph {
