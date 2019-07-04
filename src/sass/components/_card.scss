@@ -134,38 +134,6 @@
     justify-content: center;
   }
 
-  &__list {
-    list-style-type: none;
-    line-height: 2;
-    width: 41%;
-
-    @include respond(phoneL) {
-      width: 100%;
-      order: 1;
-      margin-top: 2rem;
-    }
-
-    .values-card__item {
-      display: flex;
-      align-items: center;
-      border-bottom: 2px dotted $color-light-gray-3;
-
-      .values-card__plus {
-        color: $color-green;
-        font-size: 3rem;
-        margin-right: 2rem;
-      }
-
-      &:last-child {
-        border-bottom: none;
-      }
-    }
-
-    @include respond(phone) {
-      line-height: 1.4;
-    }
-  }
-
   &--second-card {
     @include respond(tab-land) {
       display: none;

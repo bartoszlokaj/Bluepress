@@ -26,18 +26,21 @@
   }
 
   &--1 {
-    &::after{
+    &::after {
       content: "";
       background-color: transparent;
     }
   }
 
   &--2 {
-    box-shadow: unset;
-
     &::before {
       content: "";
-      background-color: $color-secondary-green;
+      background-image: linear-gradient(
+        to right bottom,
+        $color-secondary-green,
+        $color-tertiary,
+        $color-secondary-green
+      );
     }
 
     &::after {
@@ -52,48 +55,22 @@
     z-index: 1;
     border-radius: 2px;
 
-    &--1 {
-      height: 43rem;
+    height: 43rem;
 
-      @include respond(phablet) {
-        height: 35rem;
-      }
-
-      @include respond(phoneL) {
-        height: 30rem;
-      }
-
-      @include respond(phone) {
-        height: 26rem;
-      }
-
-      @include respond(phoneS) {
-        height: 22.6rem;
-      }
+    @include respond(phablet) {
+      height: 35rem;
     }
 
-    &--2 {
-      height: 37rem;
-
-      @include respond(phablet) {
-        height: 35rem;
-      }
-
-      @include respond(phoneL) {
-        height: 28.5rem;
-      }
-
-      @include respond(phone) {
-        height: 24rem;
-      }
-
-      @include respond(phoneS) {
-        height: 20.6rem;
-      }
+    @include respond(phoneL) {
+      height: 30rem;
     }
 
-    .dupa {
-      height: 18rem;
+    @include respond(phone) {
+      height: 26rem;
+    }
+
+    @include respond(phoneS) {
+      height: 22.6rem;
     }
   }
 }
