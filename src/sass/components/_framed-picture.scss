@@ -32,6 +32,22 @@
 
     &--1 {
       height: 30rem;
+
+      @include respond(phablet) {
+        height: 35rem;
+      }
+
+      @include respond(phoneL) {
+        height: 30rem;
+      }
+
+      @include respond(phone) {
+        height: 26rem;
+      }
+
+      @include respond(phoneS) {
+        height: 22.6rem;
+      }
     }
   }
 }

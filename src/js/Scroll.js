@@ -4,8 +4,22 @@ window.onscroll = function() {
 
 const sidedrawer = document.querySelector(".sidedrawer");
 const topperBtn = document.querySelector(".topper");
+const backdrop = document.querySelector(".backdrop");
 
 let link = document.querySelectorAll(".link");
+
+//Close sidenav after click on link
+//////////////
+link.forEach(e => {
+  e.addEventListener("click", () => {
+    close();
+  });
+});
+
+const close = () => {
+  backdrop.style.animation = "backdrop-out .3s ease-in-out";
+  sidedrawer.style.animation = "move-to-left .3s ease-in-out forwards";
+};
 
 // ACTIVE LINKS
 // THERE HAS TO BE A WAY TO SHORTEN THIS UP!!
@@ -50,7 +64,7 @@ let active = () => {
         e.classList.add("active");
       });
       topperBtn.style.animation = "topper-in .4s ease-in-out forwards";
-    }  else {
+    } else {
       aboutLink.forEach(e => {
         e.classList.remove("active");
       });
@@ -119,17 +133,6 @@ let active = () => {
     }
   };
   activeOffer();
-};
-
-link.forEach(e => {
-  e.addEventListener("click", () => {
-    close();
-  });
-});
-
-const close = () => {
-  backdrop.style.animation = "backdrop-out .3s ease-in-out";
-  sidedrawer.style.animation = "move-to-left .3s ease-in-out forwards";
 };
 
 export default scroll;
