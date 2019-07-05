@@ -5,19 +5,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 0 26px rgba($color-black, 0.5);
+  box-shadow: 0 0 10px rgba($color-black, 0.5);
   border-radius: 2px;
   background-color: $color-primary-blue;
   transition: all 0.2s ease-in-out;
 
   @include respond(phablet) {
     padding: 0;
-    box-shadow: 0 0 4px rgba($color-black, 0.5);
+    box-shadow: 0 0 3px rgba($color-black, 0.5);
   }
 
   &:hover {
     transform: scale(1.02);
-    box-shadow: 0 0 50px rgba($color-black, 0.5);
+    box-shadow: 0 0 15px rgba($color-black, 0.5);
 
     @include respond(phablet) {
       transform: unset;
@@ -34,7 +34,6 @@
     @include respond(phablet) {
       animation: unset;
       position: unset;
-      margin-right: 2rem;
     }
 
     &:hover {
@@ -78,9 +77,15 @@
       height: 22.6rem;
     }
 
-    &--horizontal {
+    &-horizontal {
       @include respond(phablet) {
-        height: 29rem;
+        height: auto;
+      }
+
+      &--2 {
+        @include respond(phablet) {
+          display: none;
+        }
       }
     }
   }

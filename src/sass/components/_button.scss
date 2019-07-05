@@ -26,12 +26,17 @@
       background-color: $color-secondary-green;
       box-shadow: 0 0 10px rgba($color-dark-gray-2, 0.6);
       transform: scale(1.02);
+
+      @include respond(phablet) {
+        transform: none;
+      }
     }
 
     &:active {
       transform: translateY(2px);
       box-shadow: 0 1px 6px rgba($color-dark-gray-2, 0.8);
       transform: scale(1.01);
+      background-color: $color-secondary-green;
     }
 
     @include respond(phablet) {
