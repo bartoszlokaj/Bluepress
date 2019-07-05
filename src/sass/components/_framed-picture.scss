@@ -1,53 +1,25 @@
 .frame {
-  position: relative;
+  width: auto;
+  height: auto;
+  padding: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
   box-shadow: 0 0 26px rgba($color-black, 0.5);
+  border-radius: 2px;
+  background-color: $color-primary-blue;
 
-  &::before {
-    content: "";
-    width: calc(100% + 1.5rem);
-    height: calc(100% + 1.5rem);
-    border-radius: 2px;
-    @include absoluteCenter;
-    z-index: 0;
-    background-color: $color-primary-blue;
-  }
-  &::after {
-    content: "";
-    width: 101%;
-    height: 101%;
-    border-radius: 2px;
-    @include absoluteCenter;
-    z-index: 2;
-    background-color: $color-primary-blue;
-    opacity: 0.2;
+
+  &-off--1 {
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 
-  &--1 {
-    &::after {
-      content: "";
-      background-color: transparent;
-    }
-  }
-
-  &--2 {
-    &::before {
-      content: "";
-      background-image: linear-gradient(
-        to right bottom,
-        $color-secondary-green,
-        $color-tertiary,
-        $color-secondary-green
-      );
-    }
-
-    &::after {
-      content: "";
-      background-color: $color-secondary-green;
-      opacity: 0.1;
-    }
+  &-off--1 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
   }
 
   .picture {
