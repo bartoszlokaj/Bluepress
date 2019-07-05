@@ -77,6 +77,46 @@
   }
 }
 
+// Used in gallery
+///////////////////////
+@keyframes picture-in {
+  0% {
+    transform: translateX(0);
+    transform: scale(1);
+    z-index: 0;
+  }
+
+  50% {
+    transform: translateX(-7rem);
+    z-index: 2;
+  }
+
+  100% {
+    transform: translateX(0);
+    transform: scale(1.06);
+    z-index: 2;
+  }
+}
+
+@keyframes picture-out {
+  0% {
+    transform: translateX(0);
+    transform: scale(1.04);
+    z-index: 2;
+  }
+  
+  50% {
+    transform: translateX(-7rem);
+    z-index: 0;
+  }
+  
+  100% {
+    transform: translateX(0);
+    transform: scale(1);
+    z-index: 0;
+  }
+}
+
 @keyframes scale-pop-up {
   0% {
     transform: scale(0);
@@ -217,4 +257,12 @@
 
 .swipe__circle {
   animation: swipe-down 3s ease-out infinite;
+}
+
+.frame-off--1 {
+  animation: picture-out .4s ease-in-out forwards;
+}
+
+.frame-off--1:hover {
+  animation: picture-in .4s ease-in-out forwards;
 }
