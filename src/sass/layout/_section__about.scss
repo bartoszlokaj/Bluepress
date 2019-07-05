@@ -7,8 +7,7 @@
       rgba($color-light-gray-1, 0.9),
       rgba($color-light-gray-2, 0.9),
       rgba($color-light-gray-3, 0.9)
-    ),
-    url("./img/work-4.jpg");
+    );
   background-size: cover;
   background-repeat: no-repeat;
   border-bottom: 3px solid $color-primary-blue;
@@ -46,6 +45,10 @@
 
     &--3{
       margin-bottom: 8rem;
+
+      @include respond(phablet) {
+        margin-bottom: 2rem;
+      }
     }
 
     .about__gallery {
@@ -57,12 +60,19 @@
       &--1 {
         justify-content: flex-start;
       }
+
+      @include respond(phablet) {
+        width: 100%;
+      }
     }
 
     .about__text {
       width: 50%;
       padding-left: 5rem;
       margin-top: -1.5rem;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
 
       @include respond(tab-land) {
         margin-top: 7rem;
@@ -75,6 +85,7 @@
       @include respond(phablet) {
         width: 100%;
         margin-top: 4rem;
+        padding-left: 0;
       }
     }
   }

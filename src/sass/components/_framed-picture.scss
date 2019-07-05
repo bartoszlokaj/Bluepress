@@ -8,37 +8,62 @@
   box-shadow: 0 0 26px rgba($color-black, 0.5);
   border-radius: 2px;
   background-color: $color-primary-blue;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 
-  &:hover {
-    transform: scale(1.04);
-    box-shadow: 0 0 50px rgba($color-black, 0.5);
+  @include respond(phablet) {
+    padding: 0;
+    box-shadow: 0 0 4px rgba($color-black, 0.5);
   }
 
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 50px rgba($color-black, 0.5);
+
+    @include respond(phablet) {
+      transform: unset;
+      box-shadow: unset;
+    }
+  }
 
   &-off--1 {
     position: absolute;
     bottom: -2.5rem;
     left: 20rem;
     z-index: 0;
+
+    @include respond(phablet) {
+      animation: unset;
+      position: unset;
+      margin-right: 2rem;
+    }
+
+    &:hover {
+      @include respond(phablet) {
+        animation: unset;
+      }
+    }
   }
-  
+
   &-off--2 {
     position: absolute;
     top: -2.5rem;
     right: 0;
     z-index: 1;
+
+    @include respond(phablet) {
+      position: unset;
+    }
   }
 
   .picture {
     position: relative;
     z-index: 1;
     border-radius: 2px;
-
     height: 43rem;
 
     @include respond(phablet) {
-      height: 35rem;
+      height: auto;
+      width: 100%;
     }
 
     @include respond(phoneL) {
@@ -51,6 +76,12 @@
 
     @include respond(phoneS) {
       height: 22.6rem;
+    }
+
+    &--horizontal {
+      @include respond(phablet) {
+        height: 29rem;
+      }
     }
   }
 }

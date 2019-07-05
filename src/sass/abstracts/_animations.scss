@@ -93,7 +93,7 @@
 
   100% {
     transform: translateX(0);
-    transform: scale(1.06);
+    transform: scale(1.03);
     z-index: 2;
   }
 }
@@ -263,6 +263,7 @@
   animation: picture-out .4s ease-in-out forwards;
 }
 
-.frame-off--1:hover {
+.frame-off--1:hover,
+.frame-off--1:active {
   animation: picture-in .4s ease-in-out forwards;
 }
