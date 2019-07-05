@@ -50,8 +50,13 @@
 
     .about__gallery {
       display: flex;
+      justify-content: flex-end;
       position: relative;
       width: 50%;
+
+      &--1 {
+        justify-content: flex-start;
+      }
     }
 
     .about__text {
