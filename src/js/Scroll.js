@@ -17,8 +17,10 @@ link.forEach(e => {
 });
 
 const close = () => {
-  backdrop.style.animation = "backdrop-out .3s ease-in-out";
-  sidedrawer.style.animation = "move-to-left .3s ease-in-out forwards";
+  if(screen.width < 900) {
+    backdrop.style.animation = "backdrop-out .3s ease-in-out";
+    sidedrawer.style.animation = "move-to-left .3s ease-in-out forwards";
+  }
 };
 
 // ACTIVE LINKS
