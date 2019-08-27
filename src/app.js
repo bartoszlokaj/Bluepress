@@ -35,7 +35,7 @@ import imgCyan4 from './img/cyan-4.jpg';
 import scroll from './js/Scroll';
 import backdrop from "./js/Backdrop";
 import closeButton from './js/CloseButton';
-import Sidedrawer from "./js/Sidedrawer";
+import SideDrawer from "./js/SideDrawer";
 
 
 const scss = require('./sass/main.scss');
