@@ -8,11 +8,9 @@ import imgSvg from "./img/sprite.svg";
 import imgWork from "./img/work.jpg";
 //section about images
 import imgWork2 from "./img/work-4.jpg";
-import imgMobile from "./img/mobile-1.jpg";
 import imgMobile2 from "./img/mobile-7.jpg";
 import imgMobile3 from "./img/mobile-12.jpg";
 import imgMobile4 from "./img/mobile-3.jpg";
-import imgTriangles from './img/triangles.png';
 //section technology images
 import imgStars from './img/stars.jpg';
 import imgWebPack from "./img/webpack.png";
