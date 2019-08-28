@@ -6,9 +6,8 @@
   box-shadow: 0 2px 5px rgba($color-dark-gray-2, 0.6);
   transition: all 0.15s ease-in-out;
 
-  &:active {
-    transform: translateY(2px);
-    box-shadow: 0 1px 3px rgba($color-dark-gray-2, 0.9);
+  &::selection {
+    background: transparent;
   }
 
   &--cta {
@@ -17,7 +16,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 4rem auto;
+    margin: 4rem auto 8rem auto;
     background-color: $color-secondary-dark;
     opacity: 0.8;
     border: 3px solid $color-secondary-dark;
@@ -25,18 +24,23 @@
 
     &:hover {
       background-color: $color-secondary-green;
+      box-shadow: 0 0 10px rgba($color-dark-gray-2, 0.6);
+      transform: scale(1.02);
+
+      @include respond(phablet) {
+        transform: none;
+      }
     }
 
-    @include respond(tab-land) {
-      width: 47rem;
+    &:active {
+      transform: translateY(2px);
+      box-shadow: 0 1px 6px rgba($color-dark-gray-2, 0.8);
+      transform: scale(1.01);
+      background-color: $color-secondary-green;
     }
 
-    @include respond(phoneL) {
-      width: 43rem;
-    }
-
-    @include respond(phoneL) {
-      margin: 6rem auto;
+    @include respond(phablet) {
+      width: 100%;
     }
   }
 
@@ -48,7 +52,7 @@
     box-shadow: unset;
     outline: none;
     -webkit-tap-highlight-color: transparent;
-    transition: all .1s ease-in-out;
+    transition: all 0.1s ease-in-out;
 
     &:hover {
       box-shadow: 0 0 5px rgba($color-green, 0.9);

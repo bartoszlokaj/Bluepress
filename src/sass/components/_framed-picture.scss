@@ -1,0 +1,92 @@
+.frame {
+  width: auto;
+  height: auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba($color-black, 0.5);
+  border-radius: 2px;
+  background-color: $color-primary-blue;
+  transition: all 0.2s ease-in-out;
+
+  @include respond(phablet) {
+    padding: 0;
+    box-shadow: 0 0 3px rgba($color-black, 0.5);
+  }
+
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba($color-black, 0.5);
+
+    @include respond(phablet) {
+      transform: unset;
+      box-shadow: unset;
+    }
+  }
+
+  &-off--1 {
+    position: absolute;
+    bottom: -2.5rem;
+    left: 20rem;
+    z-index: 0;
+
+    @include respond(phablet) {
+      animation: unset;
+      position: unset;
+    }
+
+    &:hover {
+      @include respond(phablet) {
+        animation: unset;
+      }
+    }
+  }
+
+  &-off--2 {
+    position: absolute;
+    top: -2.5rem;
+    right: 0;
+    z-index: 1;
+
+    @include respond(phablet) {
+      position: unset;
+    }
+  }
+
+  .picture {
+    position: relative;
+    z-index: 1;
+    border-radius: 2px;
+    height: 43rem;
+
+    @include respond(phablet) {
+      height: auto;
+      width: 100%;
+    }
+
+    @include respond(phoneL) {
+      height: 30rem;
+    }
+
+    @include respond(phone) {
+      height: 26rem;
+    }
+
+    @include respond(phoneS) {
+      height: 22.6rem;
+    }
+
+    &-horizontal {
+      @include respond(phablet) {
+        height: auto;
+      }
+
+      &--2 {
+        @include respond(phablet) {
+          display: none;
+        }
+      }
+    }
+  }
+}

@@ -8,7 +8,9 @@ import imgSvg from "./img/sprite.svg";
 import imgWork from "./img/work.jpg";
 //section about images
 import imgWork2 from "./img/work-4.jpg";
-import imgTriangles from './img/triangles.png';
+import imgMobile2 from "./img/mobile-7.jpg";
+import imgMobile3 from "./img/mobile-12.jpg";
+import imgMobile4 from "./img/mobile-3.jpg";
 //section technology images
 import imgStars from './img/stars.jpg';
 import imgWebPack from "./img/webpack.png";
@@ -20,18 +22,15 @@ import imgSass from "./img/sass-icon.png";
 import imgCyclone from "./img/cyclone.png";
 //section offer images
 import imgCyan1 from "./img/cyan-1.jpg";
-import imgCyan2 from "./img/cyan-2.jpg";
 import imgCyan3 from "./img/cyan-3.jpg";
 import imgCyan4 from './img/cyan-4.jpg';
-
-
 
 //  FUNCTIONS
 ////////////////////////////////////////
 import scroll from './js/Scroll';
 import backdrop from "./js/Backdrop";
 import closeButton from './js/CloseButton';
-import Sidedrawer from "./js/Sidedrawer";
+import SideDrawer from "./js/SideDrawer";
 
 
 const scss = require('./sass/main.scss');
