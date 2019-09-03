@@ -15,9 +15,9 @@ body {
 
 .navbar__logo {
   font-family: "Ubuntu", sans-serif;
-  font-weight: bold;
+  font-weight: lighter;
   text-align: center;
-  letter-spacing: 7px;
+  letter-spacing: 4px;
   font-size: 3.2rem;
   background: -webkit-linear-gradient(
     right,
@@ -99,6 +99,7 @@ body {
     font-family: "Open Sans", sans-serif;
     letter-spacing: 3px;
     font-weight: 400;
+    text-shadow: unset;
   }
 
   &--tech {
@@ -229,4 +230,9 @@ body {
   @include respond(phoneS) {
     font-size: 1.6rem;
   }
+}
+
+.footer {
+  font-size: 1.2rem;
+  color: $color-light-gray-1;
 }

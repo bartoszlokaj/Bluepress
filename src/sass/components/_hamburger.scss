@@ -1,5 +1,9 @@
 .hamburger-wrapper {
+<<<<<<< HEAD
   margin-left: 0.9rem;
+=======
+  margin-left: .9rem;
+>>>>>>> 6122f57ba80e600a820fd43f5d96957152496ba9
   display: none;
 
   @include respond(tab-port) {

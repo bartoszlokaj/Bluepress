@@ -15,16 +15,19 @@
     }
 
     @include respond(phoneL) {
-      width: 94%;
-    }
-
-    @include respond(phoneS) {
       width: 100%;
+      height: 590px;
+      margin: 5rem 0; 
+    }
+
+    @include respond(phone) {
+      height: 514px;
     }
 
     @include respond(phoneS) {
-      margin: 5rem 1rem;
+      height: 432px;
     }
+
   }
 
   &__img {
@@ -62,7 +65,7 @@
           rgba($color-primary-blue, 0.8),
           rgba($color-secondary-green, 0.8)
         ),
-        url("./img/cyan-2.jpg");
+        url("./img/cyan-3.jpg");
     }
   }
 
@@ -72,7 +75,7 @@
     padding: 2rem;
     display: flex;
     flex-flow: column;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     align-items: center;
   }
 
