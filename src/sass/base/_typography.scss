@@ -39,14 +39,14 @@ body {
   &--cta {
     color: $color-dark-gray-2;
     font-size: 2.5rem;
+
+    @include respond(phablet) {
+      font-size: 2.4rem;
+    }
   }
 
   &--card {
     color: $color-green;
-  }
-
-  @include respond(phone) {
-    font-size: 2rem;
   }
 }
 

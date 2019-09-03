@@ -1,1 +1,2 @@
 [0702/122831.821:ERROR:file_io.cc(134)] WriteFile: The pipe is being closed. (0xE8)
+[0813/104159.223:ERROR:settings.cc(325)] Settings version is not 1

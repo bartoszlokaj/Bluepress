@@ -1,12 +1,12 @@
 .hamburger-wrapper {
-  margin-left: 3.4rem;
+  margin-left: 0.9rem;
   display: none;
-  
+
   @include respond(tab-port) {
     display: flex;
     justify-content: space-around;
   }
-  
+
   @include respond(phoneS) {
     margin-left: 2.6rem;
   }
@@ -19,7 +19,7 @@
     flex-flow: column;
     justify-content: space-around;
     align-items: center;
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 
     &__line {
       width: 90%;
