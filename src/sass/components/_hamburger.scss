@@ -1,9 +1,5 @@
 .hamburger-wrapper {
-<<<<<<< HEAD
   margin-left: 0.9rem;
-=======
-  margin-left: .9rem;
->>>>>>> 6122f57ba80e600a820fd43f5d96957152496ba9
   display: none;
 
   @include respond(tab-port) {
@@ -24,6 +20,10 @@
     justify-content: space-around;
     align-items: center;
     transition: all 0.2s ease-in-out;
+
+    @include respond(phoneS) {
+      width: 5rem;
+    }
 
     &__line {
       width: 90%;
