@@ -5,7 +5,6 @@ body {
   color: $color-light-gray-1;
 }
 
-
 //COMPONENTS
 /////////////////
 .navbar {
@@ -16,9 +15,9 @@ body {
 
 .navbar__logo {
   font-family: "Ubuntu", sans-serif;
-  font-weight: bold;
+  font-weight: lighter;
   text-align: center;
-  letter-spacing: 7px;
+  letter-spacing: 4px;
   font-size: 3.2rem;
   background: -webkit-linear-gradient(
     right,
@@ -86,6 +85,23 @@ body {
     font-size: 2.3rem;
   }
 
+  &--about {
+    margin-top: 17rem;
+
+    @include respond(phablet) {
+    margin-top: 7rem;
+  }
+  }
+
+  &--paragraph {
+    font-size: 2rem;
+    text-align: left;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 3px;
+    font-weight: 400;
+    text-shadow: unset;
+  }
+
   &--tech {
     text-transform: capitalize;
     text-align: left;
@@ -96,12 +112,12 @@ body {
   }
 
   &--offer {
-      margin-top: 12rem;
+    margin-top: 10rem;
 
-      @include respond(laptop) {
-        margin-top: 7rem;
-      }
+    @include respond(laptop) {
+      margin-top: 7rem;
     }
+  }
 
   &--small {
     font-size: 2.5rem;
@@ -115,7 +131,7 @@ body {
 }
 
 .main-header {
-  font-size: 8rem;
+  font-size: 7rem;
   margin: 20rem 0.5rem 0 0.5rem;
   text-align: center;
   letter-spacing: 18px;
@@ -139,7 +155,6 @@ body {
     font-size: 3.4rem;
   }
 
-
   @include respond(phoneS) {
     font-size: 3.2rem;
     letter-spacing: 5px;
@@ -147,6 +162,8 @@ body {
 }
 
 .sub-header {
+  font-size: 2.2rem;
+  letter-spacing: 5px;
   @include respond(phablet) {
     letter-spacing: 4px;
     font-size: 2rem;
@@ -164,7 +181,7 @@ body {
   line-height: 1.6;
 
   &--top {
-    margin-top: 4rem;
+    margin-top: 1rem;
   }
 
   @include respond(phablet) {
@@ -186,8 +203,8 @@ body {
     font-size: 1.8rem;
   }
 
-  @include respond(phoneS){
-    font-size: 1.6rem
+  @include respond(phoneS) {
+    font-size: 1.6rem;
   }
 }
 
@@ -210,9 +227,12 @@ body {
     font-size: 1.8rem;
   }
 
-  @include respond(phoneS){
-    font-size: 1.6rem
+  @include respond(phoneS) {
+    font-size: 1.6rem;
   }
 }
 
-
+.footer {
+  font-size: 1.2rem;
+  color: $color-light-gray-1;
+}
