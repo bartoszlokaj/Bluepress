@@ -8,7 +8,7 @@
   }
   
   @include respond(phoneS) {
-    margin-left: 2.6rem;
+    margin-left: .9rem;
   }
 
   .hamburger {
@@ -20,6 +20,10 @@
     justify-content: space-around;
     align-items: center;
     transition: all .2s ease-in-out;
+
+    @include respond(phoneS) {
+      width: 5rem;
+    }
 
     &__line {
       width: 90%;
