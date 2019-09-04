@@ -267,3 +267,8 @@
 .frame-off--1:active {
   animation: picture-in .4s ease-in-out forwards;
 }
+
+.topper-animate-move-up {
+  // margin-bottom: 4rem;
+  transform: scale(.4);
+}

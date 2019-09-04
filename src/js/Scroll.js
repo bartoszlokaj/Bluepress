@@ -26,7 +26,7 @@ const close = () => {
 // ACTIVE LINKS
 // THERE HAS TO BE A WAY TO SHORTEN THIS UP!!
 //////////////////////////////////////////////
-let active = () => {
+const active = () => {
   let homeLink = document.querySelectorAll(".link--home");
   let aboutLink = document.querySelectorAll(".link--about");
   let techLink = document.querySelectorAll(".link--tech");
@@ -84,7 +84,7 @@ let active = () => {
       aboutPosition.getBoundingClientRect().top - 1
     ) {
       topperBtn.style.animation = "topper-out .4s ease-in-out forwards";
-    }
+    } 
   };
   activeAbout();
 
@@ -125,14 +125,14 @@ let active = () => {
         e.classList.remove("active");
       });
     }
-    if (
-      document.body.scrollTop >
-      offersPosition.getBoundingClientRect().top - 1 // Needed change after adding more sections!
-    ) {
-      offerLink.forEach(e => {
-        e.classList.remove("active");
-      });
-    }
+    // if (
+    //   document.body.scrollTop >
+    //   offerPosition.getBoundingClientRect().top - 1 // Needed change after adding more sections!
+    // ) {
+    //   offerLink.forEach(e => {
+    //     e.classList.remove("active");
+    //   });
+    // }
   };
   activeOffer();
 };
