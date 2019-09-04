@@ -12,17 +12,9 @@
 
   @include respond(phablet) {
     padding: 0;
-    box-shadow: 0 0 3px rgba($color-black, 0.5);
-  }
-
-<<<<<<< HEAD
-=======
-  @include respond(phoneL) {
-    padding: 0;
     box-shadow: unset;
   }
 
->>>>>>> ac80677807c6297931d3c7f1c037195837459573
   &:hover {
     transform: scale(1.02);
     box-shadow: 0 0 15px rgba($color-black, 0.5);
