@@ -38,37 +38,6 @@
     transform: translateX(-35rem);
   }
 
-  &__close {
-    width: 5.5rem;
-    height: 5.5rem;
-    margin: 1rem;
-    display: flex;
-    flex-flow: column;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 5rem;
-    position: absolute;
-    top: 0;
-    right: 0;
-
-    .sidedrawer__close-bar {
-      width: 90%;
-      height: 2px;
-      background-color: $color-light-gray-1;
-      transform: rotate(135deg);
-
-      &::after {
-        content: "";
-        display: block;
-        width: 100%;
-        height: 2px;
-        background-color: $color-light-gray-1;
-        position: absolute;
-        transform: rotate(90deg);
-      }
-    }
-  }
-
   nav {
     display: flex;
     justify-content: center;

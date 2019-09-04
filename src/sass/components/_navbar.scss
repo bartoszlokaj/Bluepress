@@ -48,15 +48,5 @@
     @include respond(small-screen) {
       @include absoluteCenter;
     }
-
-    @include respond(phoneL) {
-      margin-left: 2rem;
-      
-    }
-
-    @include respond(phoneS) {
-      margin-left: 3rem;
-      
-    }
   }
 }

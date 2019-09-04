@@ -1,7 +1,7 @@
 const btn = document.querySelector(".hamburger-wrapper");
 const back = document.querySelector(".backdrop");
 const sidedrawer = document.querySelector(".sidedrawer");
-const close = document.querySelector(".sidedrawer__close");
+const close = document.querySelector(".close");
 
 const backdrop = () => {
   btn.addEventListener("click", () => {

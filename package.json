@@ -1,12 +1,12 @@
 {
-  "name": "dupa",
+  "name": "bluepress",
   "version": "1.0.0",
   "description": "",
   "main": "webpack.config.js",
   "scripts": {
     "start": "webpack-dev-server",
     "prod": "npm run clean && webpack -p",
-    "clean": "rimraf ./dist/*"
+    "clean": "rimraf ./docs/*"
   },
   "keywords": [],
   "author": "Bartosz Łokaj",
