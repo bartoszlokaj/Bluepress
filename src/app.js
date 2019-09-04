@@ -31,6 +31,7 @@ import scroll from './js/Scroll';
 import backdrop from "./js/Backdrop";
 import closeButton from './js/CloseButton';
 import SideDrawer from "./js/SideDrawer";
+import topper from './js/Topper';
 
 
 const scss = require('./sass/main.scss');
