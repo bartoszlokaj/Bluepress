@@ -1,145 +1,235 @@
+// .card {
+//   background-color: $color-light-gray-1;
+//   border-radius: 5px;
+//   overflow: hidden;
+//   box-shadow: 0 0 8px rgba($color-dark-gray-1, 0.8);
+//   margin: 2.5rem;
+
+//   &--offer {
+//     width: 33rem;
+//     height: 52rem;
+//     margin: 2.5rem;
+
+//     @include respond(tab-port) {
+//       margin: 5rem 2.5rem;
+//     }
+
+//     @include respond(phoneL) {
+//       width: 100%;
+//       height: 590px;
+//       margin: 5rem 0;
+//     }
+
+//     @include respond(phone) {
+//       height: 514px;
+//     }
+
+//     @include respond(phoneS) {
+//       height: 432px;
+//     }
+
+//   }
+
+//   &__img {
+//     width: 100%;
+//     height: 50%;
+//     padding: 2rem;
+//     background-blend-mode: hard-light;
+//     background-size: cover;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: flex-end;
+//     justify-content: flex-end;
+
+//     &--1 {
+//       background-image: linear-gradient(
+//           to left bottom,
+//           rgba($color-primary-blue, 0.8),
+//           rgba($color-secondary-green, 0.8)
+//         ),
+//         url("./img/cyan-4.jpg");
+//     }
+
+//     &--2 {
+//       background-image: linear-gradient(
+//           to left bottom,
+//           rgba($color-primary-blue, 0.8),
+//           rgba($color-secondary-green, 0.8)
+//         ),
+//         url("./img/cyan-1.jpg");
+//     }
+
+//     &--3 {
+//       background-image: linear-gradient(
+//           to left bottom,
+//           rgba($color-primary-blue, 0.8),
+//           rgba($color-secondary-green, 0.8)
+//         ),
+//         url("./img/cyan-3.jpg");
+//     }
+//   }
+
+//   &__text {
+//     width: 100%;
+//     height: 50%;
+//     padding: 2rem;
+//     display: flex;
+//     flex-flow: column;
+//     justify-content: space-evenly;
+//     align-items: center;
+//   }
+
+//   &__list {
+//     list-style-type: none;
+
+//     &-item {
+//       margin-bottom: 1.5rem;
+
+//       &:last-child {
+//         margin-bottom: 2rem;
+//       }
+//     }
+//   }
+
+//   &__text-box {
+//     padding: 0 0.7rem;
+//     font-size: 2rem;
+//     border-radius: 2px;
+//     box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+//     background-image: linear-gradient(
+//       to left bottom,
+//       rgba($color-tertiary, 0.8),
+//       rgba($color-secondary-green, 0.8)
+//     );
+//   }
+
+//   &--2 {
+//     transform: scale(1.08);
+//     box-shadow: 0 0 12px rgba($color-dark-gray-1, 0.8);
+
+//     @include respond(tab-port) {
+//       box-shadow: 0 0 8px rgba($color-dark-gray-1, 0.8);
+//       transform: unset;
+//       order: -1;
+//     }
+//   }
+// }
+
+// .values-card {
+//   margin: 4rem 0;
+//   padding: 2.5rem;
+//   display: flex;
+//   justify-content: space-between;
+//   background-image: linear-gradient(
+//       to left bottom,
+//       rgba($color-light-gray-1, 0.2),
+//       rgba($color-white, 0.2)
+//     ),
+//     url(./img/triangles.png);
+//   background-repeat: none;
+//   background-size: cover;
+//   width: 71%;
+
+//   @include respond(phoneL) {
+//     margin: 0 auto;
+//     width: 100%;
+//     flex-wrap: wrap;
+//     justify-content: center;
+//   }
+
+//   &--second-card {
+//     @include respond(tab-land) {
+//       display: none;
+//     }
+//   }
+// }
+
 .card {
-  background-color: $color-light-gray-1;
-  border-radius: 5px;
-  overflow: hidden;
-  box-shadow: 0 0 8px rgba($color-dark-gray-1, 0.8);
+  position: relative;
+  perspective: 150rem;
+  width: 33rem;
+  height: 52rem;
   margin: 2.5rem;
+  border-radius: 5px;
 
-  &--offer {
-    width: 33rem;
-    height: 52rem;
-    margin: 2.5rem;
-
-    @include respond(tab-port) {
-      margin: 5rem 2.5rem;
-    }
-
-    @include respond(phoneL) {
-      width: 100%;
-      height: 590px;
-      margin: 5rem 0; 
-    }
-
-    @include respond(phone) {
-      height: 514px;
-    }
-
-    @include respond(phoneS) {
-      height: 432px;
-    }
-
-  }
-
-  &__img {
+  &__side {
     width: 100%;
-    height: 50%;
-    padding: 2rem;
-    background-blend-mode: hard-light;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-end;
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    background-color: $color-light-gray-1;
+    box-shadow: 0 0 8px rgba($color-dark-gray-1, 0.8);
 
-    &--1 {
-      background-image: linear-gradient(
-          to left bottom,
-          rgba($color-primary-blue, 0.8),
-          rgba($color-secondary-green, 0.8)
-        ),
-        url("./img/cyan-4.jpg");
-    }
+    &--front {
+      .card__img {
+        width: 100%;
+        height: 50%;
+        padding: 2rem;
+        background-blend-mode: hard-light;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-end;
 
-    &--2 {
-      background-image: linear-gradient(
-          to left bottom,
-          rgba($color-primary-blue, 0.8),
-          rgba($color-secondary-green, 0.8)
-        ),
-        url("./img/cyan-1.jpg");
-    }
+        &--1 {
+          background-image: linear-gradient(
+              to left bottom,
+              rgba($color-primary-blue, 0.8),
+              rgba($color-secondary-green, 0.8)
+            ),
+            url("./img/cyan-4.jpg");
+        }
 
-    &--3 {
-      background-image: linear-gradient(
-          to left bottom,
-          rgba($color-primary-blue, 0.8),
-          rgba($color-secondary-green, 0.8)
-        ),
-        url("./img/cyan-3.jpg");
-    }
-  }
+        &--2 {
+          background-image: linear-gradient(
+              to left bottom,
+              rgba($color-primary-blue, 0.8),
+              rgba($color-secondary-green, 0.8)
+            ),
+            url("./img/cyan-1.jpg");
+        }
 
-  &__text {
-    width: 100%;
-    height: 50%;
-    padding: 2rem;
-    display: flex;
-    flex-flow: column;
-    justify-content: space-evenly;
-    align-items: center;
-  }
+        &--3 {
+          background-image: linear-gradient(
+              to left bottom,
+              rgba($color-primary-blue, 0.8),
+              rgba($color-secondary-green, 0.8)
+            ),
+            url("./img/cyan-3.jpg");
+        }
 
-  &__list {
-    list-style-type: none;
-
-    &-item {
-      margin-bottom: 1.5rem;
-
-      &:last-child {
-        margin-bottom: 2rem;
+        .card__label {
+          padding: 0 0.7rem;
+          font-size: 2rem;
+          border-radius: 2px;
+          box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+          background-image: linear-gradient(
+            to left bottom,
+            rgba($color-tertiary, 0.8),
+            rgba($color-secondary-green, 0.8)
+          );
+        }
+      }
+      .card__text {
+        width: 100%;
+        height: 50%;
       }
     }
-  }
 
-  &__text-box {
-    padding: 0 0.7rem;
-    font-size: 2rem;
-    border-radius: 2px;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
-    background-image: linear-gradient(
-      to left bottom,
-      rgba($color-tertiary, 0.8),
-      rgba($color-secondary-green, 0.8)
-    );
-  }
-
-  &--2 {
-    transform: scale(1.08);
-    box-shadow: 0 0 12px rgba($color-dark-gray-1, 0.8);
-
-    @include respond(tab-port) {
-      box-shadow: 0 0 8px rgba($color-dark-gray-1, 0.8);
-      transform: unset;
-      order: -1;
+    &--back {
+      background: green;
+      transform: rotateY(180deg);
     }
   }
-}
 
-.values-card {
-  margin: 4rem 0;
-  padding: 2.5rem;
-  display: flex;
-  justify-content: space-between;
-  background-image: linear-gradient(
-      to left bottom,
-      rgba($color-light-gray-1, 0.2),
-      rgba($color-white, 0.2)
-    ),
-    url(./img/triangles.png);
-  background-repeat: none;
-  background-size: cover;
-  width: 71%;
-
-  @include respond(phoneL) {
-    margin: 0 auto;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: center;
+  &:hover &__side--front {
+    transform: rotateY(180deg);
   }
-
-  &--second-card {
-    @include respond(tab-land) {
-      display: none;
-    }
+  &:hover &__side--back {
+    transform: rotateY(0);
   }
 }
