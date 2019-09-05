@@ -2,10 +2,6 @@
 .link:focus {
   color: $color-light-gray-1;
   text-decoration: none;
-
-  &:hover {
-    color: $color-primary-blue;
-  }
 }
 
 .link--no-tap-effect{

@@ -48,6 +48,7 @@
 
 @keyframes swipe-down {
   0% {
+    transform: translateZ(0);
     opacity: 0;
   }
 
@@ -57,7 +58,6 @@
   }
 
   60% {
-    opacity: 1;
     transform: translateY(12.2rem)
   }
 
@@ -72,6 +72,7 @@
   }
 
   100% {
+    transform: translateZ(0);
     opacity: 0;
     transform: translateY(12.5rem)
   }
