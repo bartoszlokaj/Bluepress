@@ -27,4 +27,9 @@
         transform: rotate(90deg);
       }
     }
+
+    &--card {
+      position: unset;
+      margin: unset;
+    }
   }

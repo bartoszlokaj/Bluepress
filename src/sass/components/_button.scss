@@ -54,6 +54,16 @@
     -webkit-tap-highlight-color: transparent;
     transition: all 0.1s ease-in-out;
 
+    &-back {
+      border: 2px solid $color-white;
+      background-color: $color-white;
+      box-shadow: 0 0 5px rgba($color-black, 0.6);
+
+      &:hover {
+      transform: translateY(-2px);
+      }
+    }
+
     &:hover {
       box-shadow: 0 0 5px rgba($color-green, 0.9);
     }

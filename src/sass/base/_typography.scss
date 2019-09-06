@@ -43,6 +43,10 @@ body {
 
   &--card {
     color: $color-green;
+
+    &-back {
+      color: $color-dark-gray-1;
+    }
   }
 
   @include respond(phone) {
@@ -89,8 +93,8 @@ body {
     margin-top: 17rem;
 
     @include respond(phablet) {
-    margin-top: 7rem;
-  }
+      margin-top: 7rem;
+    }
   }
 
   &--paragraph {
@@ -119,6 +123,16 @@ body {
     }
   }
 
+  &--price {
+    font-size: 9rem;
+    font-family: "open sans", sans-serif;
+    font-weight: 100;
+    text-align: center;
+    letter-spacing: 4px;
+    color: $color-white;
+    text-shadow: 0 0px 10px rgba(68, 68, 68, 0.6);
+  }
+
   &--small {
     font-size: 2.5rem;
     letter-spacing: 4px;
@@ -127,6 +141,12 @@ body {
   &--smaller {
     font-size: 1.8rem;
     letter-spacing: 2px;
+
+    &-light {
+      color: $color-white;
+      text-shadow: 0 0px 5px rgba(0,0,0, 0.6);
+      font-weight: bold;
+    }
   }
 }
 
