@@ -146,11 +146,10 @@
 
 .card {
   position: relative;
-  perspective: 150rem;
+  perspective: 100rem;
   width: 33rem;
   height: 52rem;
   margin: 2.5rem;
-  border-radius: 5px;
 
   &__side {
     width: 100%;
@@ -160,8 +159,10 @@
     top: 0;
     left: 0;
     backface-visibility: hidden;
+    border-radius: 5px;
+    overflow: hidden;
     background-color: $color-light-gray-1;
-    box-shadow: 0 0 8px rgba($color-dark-gray-1, 0.8);
+    box-shadow: 0 .5rem 3rem rgba($color-dark-gray-1, 0.8);
 
     &--front {
       .card__img {
@@ -225,6 +226,9 @@
 
         .card__list {
           list-style-type: none;
+          display: flex;
+          flex-flow: column;
+          align-items: center;
 
           &-item {
             margin-bottom: 1.5rem;
@@ -238,7 +242,7 @@
     }
 
     &--back {
-      background: green;
+      background-image: linear-gradient(to right bottom, $color-secondary-green, $color-tertiary);
       transform: rotateY(180deg);
     }
   }
