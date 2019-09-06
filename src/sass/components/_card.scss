@@ -228,12 +228,12 @@
     }
   }
 
-  &:hover &__side--front {
-    transform: rotateY(-180deg);
-  }
-  &:hover &__side--back {
-    transform: rotateY(0);
-  }
+  // &:hover &__side--front {
+  //   transform: rotateY(-180deg);
+  // }
+  // &:hover &__side--back {
+  //   transform: rotateY(0);
+  // }
 
   @include respond(tab-port) {
     margin: 5rem 2.5rem;
@@ -252,4 +252,13 @@
   @include respond(phoneS) {
     height: 432px;
   }
+  
+}
+
+.rotate-front {
+  transform: rotateY(-180deg);
+}
+
+.rotate-back {
+  transform: rotateY(0);
 }
