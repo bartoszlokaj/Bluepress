@@ -10,6 +10,7 @@
     position: absolute;
     top: 0;
     right: 0;
+    cursor: pointer;
 
     &__bar {
       width: 90%;
@@ -26,5 +27,10 @@
         position: absolute;
         transform: rotate(90deg);
       }
+    }
+
+    &--card {
+      position: unset;
+      margin: unset;
     }
   }

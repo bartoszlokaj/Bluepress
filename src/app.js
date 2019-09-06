@@ -27,9 +27,10 @@ import imgCyan4 from './img/cyan-4.jpg';
 
 //  FUNCTIONS
 ////////////////////////////////////////
-import scroll from './js/Scroll';
 import backdrop from "./js/Backdrop";
+import cardRotate from './js/Card';
 import closeButton from './js/CloseButton';
+import scroll from './js/Scroll';
 import SideDrawer from "./js/SideDrawer";
 import topper from './js/Topper';
 
