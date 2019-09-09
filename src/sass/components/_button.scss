@@ -54,16 +54,6 @@
     -webkit-tap-highlight-color: transparent;
     transition: all 0.1s ease-in-out;
 
-    &-back {
-      border: 2px solid $color-white;
-      background-color: $color-white;
-      box-shadow: 0 0 5px rgba($color-black, 0.6);
-
-      &:hover {
-      transform: translateY(-2px);
-      }
-    }
-
     &:hover {
       box-shadow: 0 0 5px rgba($color-green, 0.9);
     }
@@ -71,6 +61,22 @@
     &:active {
       box-shadow: 0 0 3px rgba($color-green, 0.9);
       transform: unset;
+    }
+
+    &-back {
+      border: 2px solid $color-dark-gray-2;
+      background-color: $color-white;
+      padding: 1rem 2.8rem;
+      box-shadow: 0 0 5px rgba($color-black, 0.5);
+
+      &:hover {
+        box-shadow: 0 0 5px rgba($color-black, 0.5);
+      }
+
+      &:active {
+        transform: translateY(-1px);
+        box-shadow: 0 2px 7px rgba($color-black, 0.4);
+      }
     }
   }
 }

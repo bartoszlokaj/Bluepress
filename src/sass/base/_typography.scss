@@ -45,7 +45,7 @@ body {
     color: $color-green;
 
     &-back {
-      color: $color-dark-gray-1;
+      color: $color-dark-gray-2;
     }
   }
 
@@ -54,10 +54,6 @@ body {
   }
 }
 
-.card--offer {
-  font-size: 2rem;
-  text-align: center;
-}
 
 // HEADERS
 ///////////////////
@@ -237,7 +233,7 @@ body {
 
 .section__offer {
   color: $color-dark-gray-2;
-  font-size: 2.2rem;
+  font-size: 1.9rem;
 
   @include respond(laptop) {
     font-size: 2rem;
