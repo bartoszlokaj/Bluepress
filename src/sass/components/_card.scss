@@ -75,7 +75,7 @@
         padding: 2rem;
         display: flex;
         flex-flow: column;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
 
         .card__list {
@@ -98,15 +98,17 @@
     &--back {
       background-image: linear-gradient(
         to right bottom,
-        $color-secondary-green,
-        $color-tertiary
+        $color-primary-light,
+        $color-primary-blue,
+        $color-primary-light
       );
       transform: rotateY(180deg);
 
       display: flex;
       flex-flow: column;
       justify-content: space-between;
-      padding: 2rem 5rem;
+      align-items: center;
+      padding: 2rem;
       color: $color-dark-gray-1;
     }
   }
