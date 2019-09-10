@@ -92,6 +92,10 @@
             }
           }
         }
+
+        @include respond(phablet) {
+          padding-bottom: 3rem;
+        }
       }
     }
 
@@ -110,6 +114,10 @@
       align-items: center;
       padding: 2rem;
       color: $color-dark-gray-1;
+
+      @include respond(phablet) {
+        padding-bottom: 3rem;
+      }
     }
   }
 
