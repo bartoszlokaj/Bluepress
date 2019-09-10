@@ -43,6 +43,7 @@ body {
 
   &--card {
     color: $color-green;
+    font-size: inherit;
 
     &-back {
       color: $color-dark-gray-2;
@@ -240,11 +241,11 @@ body {
   }
 
   @include respond(phoneL) {
-    font-size: 1.8rem;
+    font-size: 2.6rem;
   }
 
   @include respond(phoneS) {
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
 }
 
